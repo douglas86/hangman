@@ -12,6 +12,20 @@ when you guess the words.
 # Table of Content
 
 - [Introduction](#introduction)
+- [Planning](#planning)
+  - [Colour Pallet](#colour-pallet)
+  - [Technology Used](#technology-used)
+  - [Wire framing](#wire-framing)
+
+---
+
+## Planning
+
+### Colour Pallet
+
+### Technology Used
+
+### Wire framing
 
 ---
 
