@@ -24,6 +24,8 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 ![color-pallet.png](assets/images/readme/planning/color-pallet.png)
 
+[URL: color space](https://mycolor.space/?hex=%2333976F&sub=1)
+
 ### Technology Used
 
 - figma—designing the wire frame diagram
