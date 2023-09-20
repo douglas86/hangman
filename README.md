@@ -35,6 +35,10 @@ Tablet Device
 
 ![wireframe-tablet.png](assets/images/readme/planning/wireframe-tablet.png)
 
+Desktop Devices
+
+![wireframe-desktop.png](assets/images/readme/planning/wireframe-desktop.png)
+
 ---
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
