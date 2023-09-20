@@ -27,7 +27,10 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 - figma—designing the wire frame diagram
 - GitHub and Jetbrains Spaces—version control system
 
-Comparison of using GitHub and Jetbrains Spaces
+Comparison of using GitHub and Jetbrains Spaces.
+
+The reason that I decided to use the two version control systems, was I wanted to explore more of their products, as
+their products are good and I enjoy using them.
 
 GitHub
 
