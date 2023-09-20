@@ -24,6 +24,11 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 ### Technology Used
 
+- figma—designing the wire frame diagram
+- GitHub and Jetbrains Spaces—version control system
+
+Comparison of using GitHub and Jetbrains Spaces
+
 ### Wire framing
 
 Mobile Device
