@@ -22,6 +22,8 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 ### Colour Pallet
 
+![color-pallet.png](assets/images/readme/planning/color-pallet.png)
+
 ### Technology Used
 
 - figma—designing the wire frame diagram
