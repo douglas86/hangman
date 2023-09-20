@@ -27,6 +27,8 @@ when you guess the words.
 
 ### Wire framing
 
+Mobile Device
+
 ![wireframe-mobile.png](assets/images/readme/planning/wireframe-mobile.png)
 
 ---
