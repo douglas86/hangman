@@ -27,6 +27,8 @@ when you guess the words.
 
 ### Wire framing
 
+![img.png](assets/images/readme/planning/img.png)
+
 ---
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
