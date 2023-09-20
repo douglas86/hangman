@@ -31,6 +31,10 @@ Mobile Device
 
 ![wireframe-mobile.png](assets/images/readme/planning/wireframe-mobile.png)
 
+Tablet Device
+
+![wireframe-tablet.png](assets/images/readme/planning/wireframe-tablet.png)
+
 ---
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
