@@ -1,5 +1,12 @@
 ## Introduction
 
+This is the second Milestone Project with Code Institute.
+
+This Project will just have HTML, CSS, and vanilla JavaScript.
+
+It is a simple Hangman game that uses key down event listeners,
+when you guess the words.
+
 ---
 
 # Table of Content
