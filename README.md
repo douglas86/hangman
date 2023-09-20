@@ -29,6 +29,20 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 Comparison of using GitHub and Jetbrains Spaces
 
+GitHub
+
+| Pros                                      | Cons                               |
+| ----------------------------------------- | ---------------------------------- |
+| Most popular version control system       | very basic features                |
+| Easy to create a new repository           | difficult to organise repositories |
+| Can create private or public repositories |                                    |
+
+Jetbrains Spaces
+
+| Pros | Cons |
+| ---- | ---- |
+|      |      |
+
 ### Wire framing
 
 Mobile Device
