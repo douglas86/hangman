@@ -33,26 +33,26 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 Comparison of using GitHub and Jetbrains Spaces.
 
-The reason that I decided to use the two version control systems, was I wanted to explore more of their products, as
+The reason that I decided to use the two version control systems was I wanted to explore more of their products, as
 their products are good and I enjoy using them.
 
 GitHub
 
 | Pros                                      | Cons                               |
-| ----------------------------------------- | ---------------------------------- |
+|-------------------------------------------|------------------------------------|
 | Most popular version control system       | very basic features                |
 | Easy to create a new repository           | difficult to organise repositories |
 | Can create private or public repositories |                                    |
 
 Jetbrains Spaces
 
-| Pros                                                   | Cons                                                            |
-| ------------------------------------------------------ | --------------------------------------------------------------- |
-| Lots of nice features                                  | Only has limited features on the free version                   |
-| Easy to setup and mirror other version control systems | Can be expensive                                                |
-| Excellent tool for using in collaboration              | Can't mix different paid plans                                  |
-| Integrates well with Jetbrains products                | Not that easy to move cards accross, as there seems to be a bug |
-| Easy to organise repositories into projects            | Can only create private repositories                            |
+| Pros                                                   | Cons                                                           |
+|--------------------------------------------------------|----------------------------------------------------------------|
+| Lots of nice features                                  | Only has limited features on the free version                  |
+| Easy to setup and mirror other version control systems | Can be expensive                                               |
+| Excellent tool for using in collaboration              | Can't mix different paid plans                                 |
+| Integrates well with Jetbrains products                | Not that easy to move cards across, as there seems to be a bug |
+| Easy to organise repositories into projects            | Can only create private repositories                           |
 
 ### Wire framing
 
