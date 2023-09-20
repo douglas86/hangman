@@ -27,7 +27,7 @@ when you guess the words.
 
 ### Wire framing
 
-![img.png](assets/images/readme/planning/img.png)
+![wireframe-mobile.png](assets/images/readme/planning/wireframe-mobile.png)
 
 ---
 
