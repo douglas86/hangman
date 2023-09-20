@@ -39,9 +39,13 @@ GitHub
 
 Jetbrains Spaces
 
-| Pros | Cons |
-| ---- | ---- |
-|      |      |
+| Pros                                                   | Cons                                                            |
+| ------------------------------------------------------ | --------------------------------------------------------------- |
+| Lots of nice features                                  | Only has limited features on the free version                   |
+| Easy to setup and mirror other version control systems | Can be expensive                                                |
+| Excellent tool for using in collaboration              | Can't mix different paid plans                                  |
+| Integrates well with Jetbrains products                | Not that easy to move cards accross, as there seems to be a bug |
+| Easy to organise repositories into projects            | Can only create private repositories                            |
 
 ### Wire framing
 
