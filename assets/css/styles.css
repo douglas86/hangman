@@ -2,13 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 
 /*heading*/
+header {
+  display: flex;
+}
 #heading-image {
   width: 2rem;
   height: 2rem;
 }
 h1 {
   font-family: "Croissant One", cursive;
-  text-align: center;
+  /*text-align: center;*/
   color: #33976f;
   -webkit-text-stroke: 2px #008e93;
 }
