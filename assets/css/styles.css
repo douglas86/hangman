@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 
 /*heading*/
+#heading-image {
+  width: 2rem;
+  height: 2rem;
+}
 h1 {
   font-family: "Croissant One", cursive;
   text-align: center;
