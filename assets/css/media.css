@@ -1,7 +1,15 @@
 /*Media queries: Table and larger devices*/
 @media screen and (min-width: 768px) {
-  /*general*/
+  /*heading*/
   h1 {
     font-size: 5rem;
+  }
+}
+
+/*Media queries: 4k monitors*/
+@media screen and (min-width: 2560px) {
+  /*heading*/
+  h1 {
+    font-size: 10rem;
   }
 }
