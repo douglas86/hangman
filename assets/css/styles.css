@@ -1,6 +1,12 @@
 /*google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 
+/*general*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*heading*/
 header {
   display: flex;
