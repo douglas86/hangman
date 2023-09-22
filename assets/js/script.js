@@ -6,10 +6,11 @@ function hangmanImages() {
   let id = document.getElementById("hangman-images");
 
   let img = document.createElement("img");
+  img.setAttribute("id", "hanging");
   img.setAttribute("src", images);
   img.setAttribute("alt", "Images for hangman incorrect answers");
-  img.setAttribute("width", "200px");
-  img.setAttribute("height", "200px");
+  img.setAttribute("width", "150rem");
+  img.setAttribute("height", "auto");
 
   id.appendChild(img);
 
