@@ -4,6 +4,15 @@ let numberOfTries = 10;
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
   hangmanImages();
+
+  document.addEventListener("keydown", function (event) {
+    const letters = "abcdefghijklmnopqrstuvwxyz";
+    if (letters.includes(event.key.toLowerCase())) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  });
 });
 
 function hangmanImages() {
