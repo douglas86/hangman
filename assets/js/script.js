@@ -1,6 +1,11 @@
 // global variables
 let numberOfTries = 10;
 
+// wait for the document to load then run starting functions
+document.addEventListener("DOMContentLoaded", function () {
+  hangmanImages();
+});
+
 function hangmanImages() {
   let images = `assets/images/hangman/${numberOfTries}.png`;
   let id = document.getElementById("hangman-images");
@@ -19,5 +24,3 @@ function hangmanImages() {
   // insert all created elements to div
   id.value;
 }
-
-hangmanImages();
