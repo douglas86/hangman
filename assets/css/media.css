@@ -8,6 +8,21 @@
   h1 {
     font-size: 5rem;
   }
+
+  /*main*/
+  #hanging {
+    width: 20rem;
+    margin: 1rem;
+    padding: 5rem;
+  }
+}
+
+/*Media queries: Laptop and larger*/
+@media screen and (min-width: 1024px) {
+  /*main*/
+  #hanging {
+    width: 25rem;
+  }
 }
 
 /*Media queries: 4k monitors*/
@@ -20,5 +35,10 @@
   }
   h1 {
     font-size: 10rem;
+  }
+  /*main */
+  #hanging {
+    width: 50rem;
+    padding: 20rem;
   }
 }
