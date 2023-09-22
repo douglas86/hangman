@@ -8,6 +8,13 @@
   h1 {
     font-size: 5rem;
   }
+
+  /*main*/
+  #hanging {
+    width: 20rem;
+    margin: 1rem;
+    padding: 5rem;
+  }
 }
 
 /*Media queries: 4k monitors*/
