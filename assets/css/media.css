@@ -17,6 +17,14 @@
   }
 }
 
+/*Media queries: Laptop and larger*/
+@media screen and (min-width: 1024px) {
+  /*main*/
+  #hanging {
+    width: 25rem;
+  }
+}
+
 /*Media queries: 4k monitors*/
 @media screen and (min-width: 2560px) {
   /*heading*/
