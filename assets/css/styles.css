@@ -29,3 +29,8 @@ h1 {
 #hanging {
   padding: 1rem;
 }
+#letter {
+  margin: -16rem 0.5rem 0;
+  z-index: 5;
+  font-size: 3rem;
+}

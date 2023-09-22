@@ -7,8 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("keydown", function (event) {
     const letters = "abcdefghijklmnopqrstuvwxyz";
+
     if (letters.includes(event.key.toLowerCase())) {
-      console.log(true);
+      let id = document.getElementById("letter");
+
+      id.textContent = event.key.toUpperCase();
     } else {
       console.log(false);
     }
