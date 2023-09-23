@@ -54,5 +54,5 @@ function startTimer(id) {
 
   timer = setInterval(function () {
     id.textContent = "";
-  }, 3000);
+  }, 1000);
 }
