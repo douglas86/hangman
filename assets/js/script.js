@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   hangmanImages();
 
   document.addEventListener("keydown", function (event) {
-    const letters = "abcdefghijklmnopqrstuvwxyz";
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    if (letters.includes(event.key.toLowerCase())) {
+    // checks if the keydown character is in alphabet variable
+    if (alphabet.includes(event.key.toLowerCase())) {
       let id = document.getElementById("letter");
 
       id.textContent = event.key.toUpperCase();
