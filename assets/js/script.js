@@ -1,5 +1,6 @@
 // global variables
 let numberOfTries = 10;
+let timer;
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
@@ -7,14 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("keydown", function (event) {
     const letters = "abcdefghijklmnopqrstuvwxyz";
-    let timer = 0;
 
     if (letters.includes(event.key.toLowerCase())) {
       let id = document.getElementById("letter");
 
       id.textContent = event.key.toUpperCase();
 
-      startTimer(timer, id);
+      startTimer(id);
     }
   });
 });
@@ -38,13 +38,11 @@ function hangmanImages() {
   id.value;
 }
 
-function startTimer(timer, id) {
+function startTimer(id) {
   // clear timer in case I need to restart
   clearInterval(timer);
 
   timer = setInterval(function () {
     id.textContent = "";
   }, 3000);
-
-  return timer;
 }
