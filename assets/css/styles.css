@@ -34,3 +34,11 @@ h1 {
   z-index: 5;
   font-size: 3rem;
 }
+.letter-correct {
+  color: green;
+  -webkit-text-stroke: 1px #052b0f;
+}
+.letter-incorrect {
+  color: red;
+  -webkit-text-stroke: 1px #611c17;
+}
