@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/**
+ * Creates the images for the hangman game dynamically
+ */
 function hangmanImages() {
   let images = `assets/images/hangman/${numberOfTries}.png`;
   let id = document.getElementById("hangman-images");
@@ -38,6 +41,10 @@ function hangmanImages() {
   id.value;
 }
 
+/**
+ * starts the timer on keydown event and sets the text content by id
+ * @param id
+ */
 function startTimer(id) {
   // clear timer in case I need to restart
   clearInterval(timer);
