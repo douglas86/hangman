@@ -7,11 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("keydown", function (event) {
     const letters = "abcdefghijklmnopqrstuvwxyz";
+    let timer = 0;
 
     if (letters.includes(event.key.toLowerCase())) {
       let id = document.getElementById("letter");
 
       id.textContent = event.key.toUpperCase();
+
+      startTimer(timer, id);
     }
   });
 });
@@ -33,4 +36,15 @@ function hangmanImages() {
 
   // insert all created elements to div
   id.value;
+}
+
+function startTimer(timer, id) {
+  // clear timer in case I need to restart
+  clearInterval(timer);
+
+  timer = setInterval(function () {
+    id.textContent = "";
+  }, 3000);
+
+  return timer;
 }
