@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
       let id = document.getElementById("letter");
 
       id.textContent = event.key.toUpperCase();
-    } else {
-      console.log(false);
     }
   });
 });
