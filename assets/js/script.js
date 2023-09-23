@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       id.textContent = event.key.toUpperCase();
 
       startTimer(id);
+    } else {
+      throw "Unknown key please enter the correct key";
     }
   });
 });
