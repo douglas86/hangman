@@ -4,6 +4,7 @@ let timer;
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
+  // Functions to load on page start
   hangmanImages();
 
   document.addEventListener("keydown", function (event) {
