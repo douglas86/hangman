@@ -11,13 +11,17 @@
 
   /*main*/
   #hanging {
-    width: 20rem;
+    width: 30vw;
     margin: 1rem;
-    padding: 5rem;
+    padding: 1rem;
   }
   #letter {
-    margin: -35rem 4rem 0;
+    margin: -7rem 4rem 0;
     font-size: 5rem;
+  }
+  #scoring-attempts {
+    font-size: 2rem;
+    padding: 1rem;
   }
 }
 
