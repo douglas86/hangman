@@ -26,8 +26,15 @@ h1 {
 }
 
 /*main*/
+#hangman-image {
+  display: flex;
+  justify-content: center;
+}
 #hanging {
+  width: 70vw;
+  height: auto;
   padding: 1rem;
+  margin: auto;
 }
 #letter {
   margin: -16rem 0.5rem 0;
