@@ -37,9 +37,10 @@ h1 {
   margin: auto;
 }
 #letter {
-  margin: -16rem 0.5rem 0;
+  margin: -2rem 0.5rem 0;
   z-index: 5;
   font-size: 3rem;
+  position: absolute;
 }
 .letter-correct {
   color: green;
@@ -50,5 +51,7 @@ h1 {
   -webkit-text-stroke: 1px #611c17;
 }
 #scoring-attempts {
-  margin: 5rem 2rem 0 0.5rem;
+  display: flex;
+  margin: 1rem 2rem 0 0.5rem;
+  justify-content: space-between;
 }
