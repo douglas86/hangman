@@ -24,24 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**
- * Creates the images for the hangman game dynamically
+ * generate the src attribute dynamically
  */
 function hangmanImages() {
   let images = `assets/images/hangman/${numberOfTries}.png`;
-  let id = document.getElementById("hangman-images");
+  let id = document.getElementById("hanging");
 
-  // Creating and setting attributes for the image
-  let img = document.createElement("img");
-  img.setAttribute("id", "hanging");
-  img.setAttribute("src", images);
-  img.setAttribute("alt", "Images for hangman incorrect answers");
-  img.setAttribute("width", "150rem");
-  img.setAttribute("height", "auto");
+  id.setAttribute("src", images);
 
-  // add image element to div
-  id.appendChild(img);
-
-  // insert all created elements to div
   id.value;
 }
 
