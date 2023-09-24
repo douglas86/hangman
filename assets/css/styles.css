@@ -49,3 +49,6 @@ h1 {
   color: red;
   -webkit-text-stroke: 1px #611c17;
 }
+#scoring-attempts {
+  margin: 5rem 2rem 0 0.5rem;
+}
