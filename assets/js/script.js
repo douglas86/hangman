@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (alphabet.includes(event.key.toLowerCase())) {
       let id = document.getElementById("letter");
 
-      id.textContent = event.key.toUpperCase();
-
       startTimer(id);
     } else {
       throw "Unknown key please enter the correct key";
@@ -49,20 +47,22 @@ function startTimer(id) {
 }
 
 /**
- * increases the score by 2 points when called
+ * increase the score by 2 points
+ * @param elementId
  */
-function increaseScore() {
-  let id = document.getElementById("scoring");
+function increase(elementId) {
+  let id = document.getElementById(elementId);
   let text = Number(id.textContent) + 2;
 
   id.textContent = text.toString();
 }
 
 /**
- * decreases the score by 1 point when called
+ * decrease score by one point
+ * @param elementId
  */
-function decreaseScore() {
-  let id = document.getElementById("tries");
+function decrease(elementId) {
+  let id = document.getElementById(elementId);
   let text = Number(id.textContent) - 1;
 
   id.textContent = text.toString();
