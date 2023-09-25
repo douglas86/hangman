@@ -47,3 +47,10 @@ function startTimer(id) {
     id.textContent = "";
   }, 1000);
 }
+
+function increaseScore() {
+  let id = document.getElementById("scoring");
+  let text = Number(id.textContent) + 2;
+
+  id.textContent = text.toString();
+}
