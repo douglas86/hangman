@@ -48,9 +48,22 @@ function startTimer(id) {
   }, 1000);
 }
 
+/**
+ * increases the score by 2 points when called
+ */
 function increaseScore() {
   let id = document.getElementById("scoring");
   let text = Number(id.textContent) + 2;
+
+  id.textContent = text.toString();
+}
+
+/**
+ * decreases the score by 1 point when called
+ */
+function decreaseScore() {
+  let id = document.getElementById("tries");
+  let text = Number(id.textContent) - 1;
 
   id.textContent = text.toString();
 }
