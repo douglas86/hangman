@@ -1,3 +1,5 @@
+import { names } from "./names.js";
+
 // global variables
 let numberOfTries = 10;
 let timer;
@@ -33,6 +35,13 @@ function hangmanImages() {
   id.setAttribute("src", images);
 
   id.value;
+}
+
+/**
+ * uses the array to generate the letters
+ */
+function randomArrayValue() {
+  return names[Math.floor(Math.random() * names.length)];
 }
 
 /**

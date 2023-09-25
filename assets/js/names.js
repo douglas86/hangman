@@ -1,4 +1,4 @@
-export const array = [
+export const names = [
   {
     name: "Japan",
     category: "countries",
