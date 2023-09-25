@@ -4,6 +4,7 @@ let timer;
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
+  // Functions to load on page start
   hangmanImages();
 
   document.addEventListener("keydown", function (event) {
@@ -23,24 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**
- * Creates the images for the hangman game dynamically
+ * generate the src attribute dynamically
  */
 function hangmanImages() {
-  let images = `assets/images/hangman/${numberOfTries}.png`;
-  let id = document.getElementById("hangman-images");
+  let images = `assets/images/hangman/${10 - numberOfTries}.png`;
+  let id = document.getElementById("hanging");
 
-  // Creating and setting attributes for the image
-  let img = document.createElement("img");
-  img.setAttribute("id", "hanging");
-  img.setAttribute("src", images);
-  img.setAttribute("alt", "Images for hangman incorrect answers");
-  img.setAttribute("width", "150rem");
-  img.setAttribute("height", "auto");
+  id.setAttribute("src", images);
 
-  // add image element to div
-  id.appendChild(img);
-
-  // insert all created elements to div
   id.value;
 }
 
@@ -55,4 +46,31 @@ function startTimer(id) {
   timer = setInterval(function () {
     id.textContent = "";
   }, 1000);
+}
+
+/**
+ * increase the score by 2 points
+ * @param elementId
+ */
+function increase(elementId) {
+  let id = document.getElementById(elementId);
+  let text = Number(id.textContent) + 2;
+
+  // throw error if the element didn't increment correctly
+  if (Number(id.textContent) + 2 !== text) {
+    throw `element with id ${elementId} did not increment correctly is should have been ${text}`;
+  }
+
+  id.textContent = text.toString();
+}
+
+/**
+ * decrease score by one point
+ * @param elementId
+ */
+function decrease(elementId) {
+  let id = document.getElementById(elementId);
+  let text = Number(id.textContent) - 1;
+
+  id.textContent = text.toString();
 }

@@ -1,56 +1,68 @@
-/*Media queries: Table and larger devices*/
+/*Media query: tablet and larger*/
 @media screen and (min-width: 768px) {
-  /*heading*/
+  /*header*/
+  #heading-image {
+    width: 3rem;
+    height: 3rem;
+  }
+  h1 {
+    font-size: 300%;
+  }
+
+  /*main*/
+  #hangman-image > img {
+    width: 80%;
+  }
+  #letter {
+    font-size: 6rem;
+    padding: 1rem;
+  }
+  #scoring-attempts > h2 {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+}
+
+/*Media query: laptop and larger*/
+@media screen and (min-width: 1024px) {
+  /*header*/
   #heading-image {
     width: 5rem;
     height: 5rem;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 500%;
   }
 
   /*main*/
-  #hanging {
-    width: 20rem;
-    margin: 1rem;
-    padding: 5rem;
+  #hangman-image > img {
+    width: 90%;
   }
-  #letter {
-    margin: -35rem 4rem 0;
-    font-size: 5rem;
+  #scoring-attempts > h2 {
+    font-size: 3rem;
+    padding: 4rem;
   }
 }
 
-/*Media queries: Laptop and larger*/
-@media screen and (min-width: 1024px) {
-  /*main*/
-  #hanging {
-    width: 25rem;
-  }
-  #letter {
-    margin: -45rem 4rem 0;
-    font-size: 7rem;
-  }
-}
-
-/*Media queries: 4k monitors*/
+/*Media query: 4k monitors*/
 @media screen and (min-width: 2560px) {
-  /*heading*/
+  /*header*/
   #heading-image {
     width: 10rem;
     height: 10rem;
-    border-radius: 10px;
   }
   h1 {
-    font-size: 10rem;
+    font-size: 1000%;
   }
-  /*main */
-  #hanging {
-    width: 50rem;
-    padding: 20rem;
+
+  /*main*/
+  #hangman-image {
+    width: 50vw;
   }
   #letter {
-    margin: -100rem 15rem 0;
-    font-size: 15rem;
+    font-size: 10rem;
+  }
+  #scoring-attempts > h2 {
+    font-size: 500%;
   }
 }

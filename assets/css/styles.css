@@ -26,19 +26,24 @@ h1 {
 }
 
 /*main*/
-#hanging {
-  padding: 1rem;
+#scoring-and-images {
+  display: flex;
+  width: 100%;
+}
+#hangman-image {
+  display: flex;
+  justify-content: center;
+}
+#hangman-image > img {
+  width: 50%;
 }
 #letter {
-  margin: -16rem 0.5rem 0;
-  z-index: 5;
-  font-size: 3rem;
+  position: absolute;
+  font-size: 200%;
 }
-.letter-correct {
-  color: green;
-  -webkit-text-stroke: 1px #052b0f;
+#scoring-attempts {
+  width: 100%;
 }
-.letter-incorrect {
-  color: red;
-  -webkit-text-stroke: 1px #611c17;
+#scoring-attempts > h2 {
+  font-size: 100%;
 }
