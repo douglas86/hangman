@@ -47,3 +47,8 @@ h1 {
 #scoring-attempts > h2 {
   font-size: 100%;
 }
+.letters {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}

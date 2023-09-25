@@ -8,6 +8,7 @@ let timer;
 document.addEventListener("DOMContentLoaded", function () {
   // Functions to load on page start
   hangmanImages();
+  createLetters();
 
   document.addEventListener("keydown", function (event) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -38,10 +39,24 @@ function hangmanImages() {
 }
 
 /**
- * uses the array to generate the letters
+ * randomly selects a value from names array
  */
 function randomArrayValue() {
   return names[Math.floor(Math.random() * names.length)];
+}
+
+/**
+ * get random name at returns as array of letters
+ */
+function nameAsArray() {
+  const { name } = randomArrayValue();
+  let letter = [];
+
+  for (let i of name) {
+    letter.push(i);
+  }
+
+  return letter;
 }
 
 /**
