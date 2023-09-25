@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (alphabet.includes(event.key.toLowerCase())) {
       let id = document.getElementById("letter");
 
+      id.textContent = event.key.toUpperCase();
+
       startTimer(id);
     } else {
       throw "Unknown key please enter the correct key";
@@ -53,6 +55,11 @@ function startTimer(id) {
 function increase(elementId) {
   let id = document.getElementById(elementId);
   let text = Number(id.textContent) + 2;
+
+  // throw error if the element didn't increment correctly
+  if (Number(id.textContent) + 2 !== text) {
+    throw `element with id ${elementId} did not increment correctly is should have been ${text}`;
+  }
 
   id.textContent = text.toString();
 }
