@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * generate the src attribute dynamically
  */
 function hangmanImages() {
-  let images = `assets/images/hangman/${numberOfTries}.png`;
+  let images = `assets/images/hangman/${10 - numberOfTries}.png`;
   let id = document.getElementById("hanging");
 
   id.setAttribute("src", images);
