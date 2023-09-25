@@ -8,7 +8,6 @@ let timer;
 document.addEventListener("DOMContentLoaded", function () {
   // Functions to load on page start
   hangmanImages();
-  createLetters();
 
   document.addEventListener("keydown", function (event) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -46,7 +45,7 @@ function randomArrayValue() {
 }
 
 /**
- * get random name at returns as array of letters
+ * get a random name that returns an array of letters
  */
 function nameAsArray() {
   const { name } = randomArrayValue();
@@ -57,6 +56,25 @@ function nameAsArray() {
   }
 
   return letter;
+}
+
+/**
+ * prints out were all the spacing goes
+ */
+function letters() {
+  let letters = nameAsArray();
+  let div = document.getElementById("letters");
+
+  for (let letter of letters) {
+    let h3 = document.createElement("h3");
+    if (letter === " ") {
+      h3.textContent = " ";
+    } else {
+      h3.textContent = "_";
+    }
+
+    div.appendChild(h3);
+  }
 }
 
 /**
