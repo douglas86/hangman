@@ -6,8 +6,12 @@ let timer;
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
+  const { name } = randomArrayValue(); // using object destructuring will get the name out of the object in names.js
+  let splitNameToArray = name.split(""); // once an object has been grabbed will split the letters to an array
+
   // Functions to load on page start
-  hangmanImages();
+  hangmanImages(); // dynamically loads the hangman images to the display
+  displayArrayToScreen(splitNameToArray); // function to load letters on display
 
   document.addEventListener("keydown", function (event) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -19,8 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
       id.textContent = event.key.toUpperCase();
 
       startTimer(id);
-    } else {
-      throw "Unknown key please enter the correct key";
     }
   });
 });
@@ -38,43 +40,25 @@ function hangmanImages() {
 }
 
 /**
+ * passing in a param will print out the array to the screen were necessary
+ * @param splitNameToArray
+ */
+function displayArrayToScreen(splitNameToArray) {
+  let id = document.getElementById("letters");
+
+  for (let splitNameToArrayElement of splitNameToArray) {
+    let h3 = document.createElement("h3");
+    h3.textContent = splitNameToArrayElement;
+
+    id.appendChild(h3);
+  }
+}
+
+/**
  * randomly selects a value from names array
  */
 function randomArrayValue() {
   return names[Math.floor(Math.random() * names.length)];
-}
-
-/**
- * get a random name that returns an array of letters
- */
-function nameAsArray() {
-  const { name } = randomArrayValue();
-  let letter = [];
-
-  for (let i of name) {
-    letter.push(i);
-  }
-
-  return letter;
-}
-
-/**
- * prints out were all the spacing goes
- */
-function letters() {
-  let letters = nameAsArray();
-  let div = document.getElementById("letters");
-
-  for (let letter of letters) {
-    let h3 = document.createElement("h3");
-    if (letter === " ") {
-      h3.textContent = " ";
-    } else {
-      h3.textContent = "_";
-    }
-
-    div.appendChild(h3);
-  }
 }
 
 /**
