@@ -33,6 +33,22 @@ document.addEventListener("DOMContentLoaded", function () {
       id.textContent = event.key.toUpperCase();
 
       startTimer(id);
+
+      splitNameToArray.map((items, index) => {
+        if (items.toUpperCase() === event.key.toUpperCase()) {
+          arrayBlanks[index] = items;
+
+          let id = document.getElementById("letters");
+          id.innerHTML = " ";
+
+          displayArrayToScreen(arrayBlanks);
+        } else {
+          console.log(false);
+        }
+      });
+
+      console.log("split", splitNameToArray);
+      console.log("array", arrayBlanks);
     }
   });
 });
@@ -58,6 +74,8 @@ function displayArrayToScreen(splitNameToArray) {
 
   for (let splitNameToArrayElement of splitNameToArray) {
     let h3 = document.createElement("h3");
+    h3.setAttribute("id", "spacing");
+
     h3.textContent = splitNameToArrayElement;
 
     id.appendChild(h3);
