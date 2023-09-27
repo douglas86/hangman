@@ -1,5 +1,7 @@
 import { names } from "./names.js";
 
+import { increase, decrease } from "./utils";
+
 // global variables
 let numberOfTries = 10;
 let timer;
@@ -104,31 +106,4 @@ function startTimer(id) {
   timer = setInterval(function () {
     id.textContent = "";
   }, 1000);
-}
-
-/**
- * increase the score by 2 points
- * @param elementId
- */
-function increase(elementId) {
-  let id = document.getElementById(elementId);
-  let text = Number(id.textContent) + 2;
-
-  // throw error if the element didn't increment correctly
-  if (Number(id.textContent) + 2 !== text) {
-    throw `element with id ${elementId} did not increment correctly is should have been ${text}`;
-  }
-
-  id.textContent = text.toString();
-}
-
-/**
- * decrease score by one point
- * @param elementId
- */
-function decrease(elementId) {
-  let id = document.getElementById(elementId);
-  let text = Number(id.textContent) - 1;
-
-  id.textContent = text.toString();
 }
