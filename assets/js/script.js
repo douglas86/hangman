@@ -34,21 +34,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
       startTimer(id);
 
+      // when it finds the key that was pressed in the array, it adds score by one
+      // when it doesn't find the key in array it subtracts one from score and tries
+      splitNameToArray.find(
+        (element) => element.toLowerCase() === event.key.toLowerCase(),
+      )
+        ? increase("scoring")
+        : decrease("scoring") || decrease("tries");
+
+      // checks if key is in array using a map
       splitNameToArray.map((items, index) => {
         if (items.toUpperCase() === event.key.toUpperCase()) {
           arrayBlanks[index] = items;
 
           let id = document.getElementById("letters");
-          id.innerHTML = " ";
+          id.innerHTML = " "; // clears a div element before appending to it
 
           displayArrayToScreen(arrayBlanks);
-        } else {
-          console.log(false);
         }
       });
-
-      console.log("split", splitNameToArray);
-      console.log("array", arrayBlanks);
     }
   });
 });
