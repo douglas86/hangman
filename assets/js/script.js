@@ -1,6 +1,6 @@
 import { names } from "./names.js";
 
-import { increase, decrease } from "./utils";
+import { increase, decrease } from "./utils/scoring";
 
 // global variables
 let timer;
