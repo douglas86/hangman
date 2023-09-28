@@ -1,6 +1,7 @@
 import { names } from "./names.js";
 
 import { increase, decrease } from "./utils/scoring";
+import { hangmanImages } from "./utils/displayToScreen";
 
 // global variables
 let timer;
@@ -57,20 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-/**
- * generate the src attribute dynamically
- */
-function hangmanImages() {
-  let tries = Number(document.getElementById("tries").innerHTML);
-
-  let images = `assets/images/hangman/${tries}.png`;
-  let id = document.getElementById("hanging");
-
-  id.setAttribute("src", images);
-
-  id.value;
-}
 
 /**
  * passing in a param will print out the array to the screen were necessary
