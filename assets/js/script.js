@@ -1,9 +1,8 @@
 import { names } from "./names.js";
 
-import { increase, decrease } from "./utils";
+import { increase, decrease } from "./utils/scoring";
+import { hangmanImages, displayArrayToScreen } from "./components";
 
-// global variables
-let numberOfTries = 10;
 let timer;
 
 // wait for the document to load then run starting functions
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         (element) => element.toLowerCase() === event.key.toLowerCase(),
       )
         ? increase("scoring")
-        : decrease("scoring") || decrease("tries");
+        : decrease("scoring") || decrease("tries") || hangmanImages();
 
       // checks if key is in array using a map
       splitNameToArray.map((items, index) => {
@@ -60,35 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**
- * generate the src attribute dynamically
- */
-function hangmanImages() {
-  let images = `assets/images/hangman/${10 - numberOfTries}.png`;
-  let id = document.getElementById("hanging");
-
-  id.setAttribute("src", images);
-
-  id.value;
-}
-
-/**
- * passing in a param will print out the array to the screen were necessary
- * @param splitNameToArray
- */
-function displayArrayToScreen(splitNameToArray) {
-  let id = document.getElementById("letters");
-
-  for (let splitNameToArrayElement of splitNameToArray) {
-    let h3 = document.createElement("h3");
-    h3.setAttribute("id", "spacing");
-
-    h3.textContent = splitNameToArrayElement;
-
-    id.appendChild(h3);
-  }
-}
-
-/**
  * randomly selects a value from names array
  */
 function randomArrayValue() {
@@ -96,7 +66,7 @@ function randomArrayValue() {
 }
 
 /**
- * starts the timer on keydown event and sets the text content by id
+ * starts timer on keydown event in alphabet string
  * @param id
  */
 function startTimer(id) {
