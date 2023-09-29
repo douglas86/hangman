@@ -21,7 +21,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 ---
 
-## Planning
+## [Planning](#table-of-content)
 
 ### Colour Pallet
 
