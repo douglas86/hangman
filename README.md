@@ -59,7 +59,7 @@ their products are good and I enjoy using them.
 | Integrates well with Jetbrains products                | Can only create private repositories          |
 | Easy to organise repositories into projects            |                                               |
 
-### Wire framing
+### [Wire framing](#table-of-content)
 
 Mobile Device
 
