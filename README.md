@@ -61,7 +61,7 @@ their products are good and I enjoy using them.
 
 ### [Wire framing](#table-of-content)
 
-Mobile Device
+#### [Mobile Device](#table-of-content)
 
 ![wireframe-mobile.png](assets/images/readme/planning/wireframe-mobile.png)
 
