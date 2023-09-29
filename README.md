@@ -28,7 +28,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 ## [Planning](#table-of-content)
 
-### [Colour Pallet](#colour-pallet)
+### [Colour Pallet](#table-of-content)
 
 ![color-pallet.png](assets/images/readme/planning/color-pallet.png)
 
