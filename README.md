@@ -23,13 +23,13 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 
 ## [Planning](#table-of-content)
 
-### Colour Pallet
+### [Colour Pallet](#colour-pallet)
 
 ![color-pallet.png](assets/images/readme/planning/color-pallet.png)
 
 [URL: color space](https://mycolor.space/?hex=%2333976F&sub=1)
 
-### Technology Used
+### [Technology Used](#table-of-content)
 
 - figma—designing the wire frame diagram
 - GitHub and Jetbrains Spaces—version control system
