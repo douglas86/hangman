@@ -1,4 +1,4 @@
-## Introduction
+## [Introduction](#table-of-content)
 
 This is the second Milestone Project with Code Institute.
 
@@ -14,22 +14,27 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 - [Planning](#planning)
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
+    - [GitHub: Pros and Cons](#github-pros-and-cons)
+    - [Jetbrains Spaces: Pros and Cons](#jetbrains-spaces-pros-and-cons)
   - [Wire framing](#wire-framing)
+    - [Mobile Devices](#mobile-device)
+    - [Tablet Devices](#tablet-device)
+    - [Desktop Devices](#desktop-devices)
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
   - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
 
 ---
 
-## Planning
+## [Planning](#table-of-content)
 
-### Colour Pallet
+### [Colour Pallet](#table-of-content)
 
 ![color-pallet.png](assets/images/readme/planning/color-pallet.png)
 
 [URL: color space](https://mycolor.space/?hex=%2333976F&sub=1)
 
-### Technology Used
+### [Technology Used](#table-of-content)
 
 - figma—designing the wire frame diagram
 - GitHub and Jetbrains Spaces—version control system
@@ -39,7 +44,7 @@ Comparison of using GitHub and Jetbrains Spaces.
 The reason that I decided to use the two version control systems was I wanted to explore more of their products, as
 their products are good and I enjoy using them.
 
-#### GitHub
+#### [GitHub Pros and Cons](#table-of-content)
 
 | Pros                                      | Cons                               |
 |-------------------------------------------|------------------------------------|
@@ -47,7 +52,7 @@ their products are good and I enjoy using them.
 | Easy to create a new repository           | difficult to organise repositories |
 | Can create private or public repositories |                                    |
 
-#### Jetbrains Spaces
+#### [Jetbrains Spaces Pros and Cons](#table-of-content)
 
 | Pros                                                   | Cons                                          |
 |--------------------------------------------------------|-----------------------------------------------|
@@ -57,17 +62,17 @@ their products are good and I enjoy using them.
 | Integrates well with Jetbrains products                | Can only create private repositories          |
 | Easy to organise repositories into projects            |                                               |
 
-### Wire framing
+### [Wire framing](#table-of-content)
 
-Mobile Device
+#### [Mobile Device](#table-of-content)
 
 ![wireframe-mobile.png](assets/images/readme/planning/wireframe-mobile.png)
 
-Tablet Device
+#### [Tablet Device](#table-of-content)
 
 ![wireframe-tablet.png](assets/images/readme/planning/wireframe-tablet.png)
 
-Desktop Devices
+#### [Desktop Devices](#table-of-content)
 
 ![wireframe-desktop.png](assets/images/readme/planning/wireframe-desktop.png)
 
