@@ -14,6 +14,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 - [Planning](#planning)
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
+    - [GitHub: Pros and Cons](#github--pros-and-cons)
   - [Wire framing](#wire-framing)
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
@@ -39,7 +40,7 @@ Comparison of using GitHub and Jetbrains Spaces.
 The reason that I decided to use the two version control systems was I wanted to explore more of their products, as
 their products are good and I enjoy using them.
 
-#### GitHub
+#### [GitHub: Pros and Cons](#table-of-content)
 
 | Pros                                      | Cons                               |
 |-------------------------------------------|------------------------------------|
