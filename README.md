@@ -94,6 +94,10 @@ This is how it looks on a page load, with random word from an object:
 
 ![array-1.png](assets/images/readme/bugs/array-1.png)
 
+This is what it looks like when I solved the bug:
+
+![array-2.png](assets/images/readme/bugs/array-2.png)
+
 ---
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
