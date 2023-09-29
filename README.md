@@ -1,4 +1,4 @@
-## Introduction
+## [Introduction](#table-of-content)
 
 This is the second Milestone Project with Code Institute.
 
