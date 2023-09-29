@@ -14,8 +14,8 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 - [Planning](#planning)
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
-    - [GitHub: Pros and Cons](#github--pros-and-cons)
-    - [Jetbrains Spaces: Pros and Cons](#jetbrains-spaces--pros-and-cons)
+    - [GitHub: Pros and Cons](#github-pros-and-cons)
+    - [Jetbrains Spaces: Pros and Cons](#jetbrains-spaces-pros-and-cons)
   - [Wire framing](#wire-framing)
     - [Mobile Devices](#mobile-device)
     - [Tablet Devices](#tablet-device)
@@ -44,7 +44,7 @@ Comparison of using GitHub and Jetbrains Spaces.
 The reason that I decided to use the two version control systems was I wanted to explore more of their products, as
 their products are good and I enjoy using them.
 
-#### [GitHub: Pros and Cons](#table-of-content)
+#### [GitHub Pros and Cons](#table-of-content)
 
 | Pros                                      | Cons                               |
 |-------------------------------------------|------------------------------------|
@@ -52,7 +52,7 @@ their products are good and I enjoy using them.
 | Easy to create a new repository           | difficult to organise repositories |
 | Can create private or public repositories |                                    |
 
-#### [Jetbrains Spaces: Pros and Cons](#table-of-content)
+#### [Jetbrains Spaces Pros and Cons](#table-of-content)
 
 | Pros                                                   | Cons                                          |
 |--------------------------------------------------------|-----------------------------------------------|
