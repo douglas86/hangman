@@ -114,6 +114,14 @@ The image is not changing with the variable it remains the same.
 I created a variable in the hangman Images function which gets the innerHTML of the tries variable on the screen. This function will run every time the variable changes.
 Replacing the existing content that was there.
 
+What it looks like on a page load:
+
+![hangman-image-1.png](assets/images/readme/bugs/hangman-image-1.png)
+
+When tries variably changed, image did not change with it:
+
+![hangman-image-2.png](assets/images/readme/bugs/hangman-image-2.png)
+
 ---
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
