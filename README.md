@@ -15,6 +15,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
     - [GitHub: Pros and Cons](#github--pros-and-cons)
+    - [Jetbrains Spaces: Pros and Cons](#jetbrains-spaces--pros-and-cons)
   - [Wire framing](#wire-framing)
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
@@ -48,7 +49,7 @@ their products are good and I enjoy using them.
 | Easy to create a new repository           | difficult to organise repositories |
 | Can create private or public repositories |                                    |
 
-#### Jetbrains Spaces
+#### [Jetbrains Spaces: Pros and Cons](#table-of-content)
 
 | Pros                                                   | Cons                                          |
 |--------------------------------------------------------|-----------------------------------------------|
