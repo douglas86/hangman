@@ -17,6 +17,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Wire framing](#wire-framing)
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
+  - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
 
 ---
 
@@ -97,6 +98,29 @@ This is how it looks on a page load, with random word from an object:
 This is what it looks like when I solved the bug:
 
 ![array-2.png](assets/images/readme/bugs/array-2.png)
+
+### [Hangman Images not Changing on Tries variable change](#table-of-content)
+
+- What is it suppose to do?
+
+Whenever I press an incorrect key and the variable for tries, changes the image is suppose to change with it.
+
+- What is it doing?
+
+The image is not changing with the variable it remains the same.
+
+- How did I get it to work?
+
+I created a variable in the hangman Images function which gets the innerHTML of the tries variable on the screen. This function will run every time the variable changes.
+Replacing the existing content that was there.
+
+What it looks like on a page load:
+
+![hangman-image-1.png](assets/images/readme/bugs/hangman-image-1.png)
+
+When tries variably changed, image did not change with it:
+
+![hangman-image-2.png](assets/images/readme/bugs/hangman-image-2.png)
 
 ---
 
