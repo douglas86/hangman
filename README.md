@@ -16,6 +16,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Technology Used](#technology-used)
   - [Wire framing](#wire-framing)
 - [Bugs and Planning](#bugs-and-problems)
+  - [Array appending instead of replacing](#array-appending-instead-of-replacing)
 
 ---
 
@@ -72,6 +73,26 @@ Desktop Devices
 ---
 
 ## [Bugs and Problems](#table-of-content)
+
+### [Array appending instead of replacing](#table-of-content)
+
+- What is it suppose to do?
+  
+When I press a correct key, it should display the new array with the updated key
+
+- What is it doing?
+
+As the correct key is pressed instead of it displaying the new created array, it is appending to the previous  array, 
+which then creates a longer array with to many spaces or letters.
+
+- How did I get it to work?
+
+When the correct key is pressed, that key is then placed in the array replacing the spaces that were created on a page 
+load, while doing that I also replace the previous array passed into the function with the newly created array.
+
+This is how it looks on a page load, with random word from an object:
+
+![array-1.png](assets/images/readme/bugs/array-1.png)
 
 ---
 
