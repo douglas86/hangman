@@ -17,6 +17,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Wire framing](#wire-framing)
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
+  - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
 
 ---
 
@@ -97,6 +98,8 @@ This is how it looks on a page load, with random word from an object:
 This is what it looks like when I solved the bug:
 
 ![array-2.png](assets/images/readme/bugs/array-2.png)
+
+### [Hangman Images not Changing on Tries variable change](#table-of-content)
 
 ---
 
