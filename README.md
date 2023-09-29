@@ -101,6 +101,19 @@ This is what it looks like when I solved the bug:
 
 ### [Hangman Images not Changing on Tries variable change](#table-of-content)
 
+- What is it suppose to do?
+
+Whenever I press an incorrect key and the variable for tries, changes the image is suppose to change with it.
+
+- What is it doing?
+
+The image is not changing with the variable it remains the same.
+
+- How did I get it to work?
+
+I created a variable in the hangman Images function which gets the innerHTML of the tries variable on the screen. This function will run every time the variable changes.
+Replacing the existing content that was there.
+
 ---
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
