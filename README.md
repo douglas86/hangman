@@ -18,7 +18,8 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
     - [Jetbrains Spaces: Pros and Cons](#jetbrains-spaces--pros-and-cons)
   - [Wire framing](#wire-framing)
     - [Mobile Devices](#mobile-device)
-    - [Tablet Devices](#table-of-content)
+    - [Tablet Devices](#tablet-device)
+    - [Desktop Devices](#desktop-devices)
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
   - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
@@ -71,7 +72,7 @@ their products are good and I enjoy using them.
 
 ![wireframe-tablet.png](assets/images/readme/planning/wireframe-tablet.png)
 
-Desktop Devices
+#### [Desktop Devices](#table-of-content)
 
 ![wireframe-desktop.png](assets/images/readme/planning/wireframe-desktop.png)
 
