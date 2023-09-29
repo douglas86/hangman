@@ -36,7 +36,7 @@ Comparison of using GitHub and Jetbrains Spaces.
 The reason that I decided to use the two version control systems was I wanted to explore more of their products, as
 their products are good and I enjoy using them.
 
-GitHub
+#### GitHub
 
 | Pros                                      | Cons                               |
 |-------------------------------------------|------------------------------------|
@@ -44,15 +44,15 @@ GitHub
 | Easy to create a new repository           | difficult to organise repositories |
 | Can create private or public repositories |                                    |
 
-Jetbrains Spaces
+#### Jetbrains Spaces
 
-| Pros                                                   | Cons                                                           |
-|--------------------------------------------------------|----------------------------------------------------------------|
-| Lots of nice features                                  | Only has limited features on the free version                  |
-| Easy to setup and mirror other version control systems | Can be expensive                                               |
-| Excellent tool for using in collaboration              | Can't mix different paid plans                                 |
-| Integrates well with Jetbrains products                | Not that easy to move cards across, as there seems to be a bug |
-| Easy to organise repositories into projects            | Can only create private repositories                           |
+| Pros                                                   | Cons                                          |
+|--------------------------------------------------------|-----------------------------------------------|
+| Lots of nice features                                  | Only has limited features on the free version |
+| Easy to setup and mirror other version control systems | Can be expensive                              |
+| Excellent tool for using in collaboration              | Can't mix different paid plans                |
+| Integrates well with Jetbrains products                | Can only create private repositories          |
+| Easy to organise repositories into projects            |                                               |
 
 ### Wire framing
 
