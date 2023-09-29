@@ -15,6 +15,8 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
   - [Wire framing](#wire-framing)
+- [Bugs and Planning](#bugs-and-problems)
+  - [Array appending instead of replacing](#array-appending-instead-of-replacing)
 
 ---
 
@@ -36,7 +38,7 @@ Comparison of using GitHub and Jetbrains Spaces.
 The reason that I decided to use the two version control systems was I wanted to explore more of their products, as
 their products are good and I enjoy using them.
 
-GitHub
+#### GitHub
 
 | Pros                                      | Cons                               |
 |-------------------------------------------|------------------------------------|
@@ -44,15 +46,15 @@ GitHub
 | Easy to create a new repository           | difficult to organise repositories |
 | Can create private or public repositories |                                    |
 
-Jetbrains Spaces
+#### Jetbrains Spaces
 
-| Pros                                                   | Cons                                                           |
-|--------------------------------------------------------|----------------------------------------------------------------|
-| Lots of nice features                                  | Only has limited features on the free version                  |
-| Easy to setup and mirror other version control systems | Can be expensive                                               |
-| Excellent tool for using in collaboration              | Can't mix different paid plans                                 |
-| Integrates well with Jetbrains products                | Not that easy to move cards across, as there seems to be a bug |
-| Easy to organise repositories into projects            | Can only create private repositories                           |
+| Pros                                                   | Cons                                          |
+|--------------------------------------------------------|-----------------------------------------------|
+| Lots of nice features                                  | Only has limited features on the free version |
+| Easy to setup and mirror other version control systems | Can be expensive                              |
+| Excellent tool for using in collaboration              | Can't mix different paid plans                |
+| Integrates well with Jetbrains products                | Can only create private repositories          |
+| Easy to organise repositories into projects            |                                               |
 
 ### Wire framing
 
@@ -67,6 +69,34 @@ Tablet Device
 Desktop Devices
 
 ![wireframe-desktop.png](assets/images/readme/planning/wireframe-desktop.png)
+
+---
+
+## [Bugs and Problems](#table-of-content)
+
+### [Array appending instead of replacing](#table-of-content)
+
+- What is it suppose to do?
+  
+When I press a correct key, it should display the new array with the updated key
+
+- What is it doing?
+
+As the correct key is pressed instead of it displaying the new created array, it is appending to the previous  array, 
+which then creates a longer array with to many spaces or letters.
+
+- How did I get it to work?
+
+When the correct key is pressed, that key is then placed in the array replacing the spaces that were created on a page 
+load, while doing that I also replace the previous array passed into the function with the newly created array.
+
+This is how it looks on a page load, with random word from an object:
+
+![array-1.png](assets/images/readme/bugs/array-1.png)
+
+This is what it looks like when I solved the bug:
+
+![array-2.png](assets/images/readme/bugs/array-2.png)
 
 ---
 
