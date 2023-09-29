@@ -15,6 +15,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
   - [Wire framing](#wire-framing)
+- [Bugs and Planning](#bugs-and-problems)
 
 ---
 
@@ -67,6 +68,10 @@ Tablet Device
 Desktop Devices
 
 ![wireframe-desktop.png](assets/images/readme/planning/wireframe-desktop.png)
+
+---
+
+## [Bugs and Problems](#table-of-content)
 
 ---
 
