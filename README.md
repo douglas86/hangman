@@ -6,6 +6,14 @@ This Project will just have HTML, CSS, and vanilla JavaScript.
 
 This is a simple Hangman Game were you guess what letters come into the spaces.
 
+### When deploying site live
+
+- GitHub Pages doesn't support the type="module" attribute on the script tag in my index.html file
+- In order for me to solve that problem, I created a new branch called github-pages
+- The reason for creating that branch was to keep well maintainable and easy to manage code in my main branch
+- With GitHub Pages not supporting type="module" it means that everything has to reside in one file
+
+[Live site](https://douglas86.github.io/hangman/)
 ---
 
 # Table of Content
