@@ -31,7 +31,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
   - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
-  - [Image not displaying on negative tries variable](#image-not-displaying-on-negative-tries-variable)
+  - [Image not displayed on negative tries variable](#image-not-displayed-on-negative-tries-variable)
 
 ---
 
@@ -97,7 +97,7 @@ When I press a correct key, it should display the new array with the updated key
 
 - What is it doing?
 
-As the correct key is pressed instead of it displaying the new created array, it is appending to the previous  array, 
+As the correct key is pressed instead of displaying the new created array, it is appended to the previous array, 
 which then creates a longer array with to many spaces or letters.
 
 - How did I get it to work?
@@ -117,7 +117,7 @@ This is what it looks like when I solved the bug:
 
 - What is it suppose to do?
 
-Whenever I press an incorrect key and the variable for tries, changes the image is suppose to change with it.
+Whenever I press an incorrect key and the variable for tries, changes the image is supposed to change with it.
 
 - What is it doing?
 
@@ -136,7 +136,22 @@ When tries variably changed, image did not change with it:
 
 ![hangman-image-2.png](assets/images/readme/bugs/hangman-image-2.png)
 
-### [Image not displaying on negative tries variable](#table-of-content)
+### [Image not displayed on negative tries variable](#table-of-content)
+
+- What is it suppose to do?
+
+It should show the final image when triesLeft variable hits below 0, in this case 0.png
+
+- What is it doing?
+
+It is showing no image when the triesLeft variable hits a negative number, giving an error in the console for image 
+not found.
+
+- How did I get it to work?
+
+I created a ternary operator for the image variable,
+Ternary operator logic goes like this: triesLeft > 0?
+display the images as usual: display the last image in sequence
 
 ---
 
