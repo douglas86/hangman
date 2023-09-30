@@ -31,6 +31,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 - [Bugs and Planning](#bugs-and-problems)
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
   - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
+  - [Image not displaying on negative tries variable](#image-not-displaying-on-negative-tries-variable)
 
 ---
 
@@ -134,6 +135,8 @@ What it looks like on a page load:
 When tries variably changed, image did not change with it:
 
 ![hangman-image-2.png](assets/images/readme/bugs/hangman-image-2.png)
+
+### [Image not displaying on negative tries variable](#table-of-content)
 
 ---
 
