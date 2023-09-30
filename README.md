@@ -153,6 +153,18 @@ I created a ternary operator for the image variable,
 Ternary operator logic goes like this: triesLeft > 0?
 display the images as usual: display the last image in sequence
 
+This is how it looks when you have used all of your tries?
+
+![negative-tries-1.png](assets/images/readme/bugs/negative-tries-1.png)
+
+This is with the error when tries hits negative?
+
+![negative-tries-2.png](assets/images/readme/bugs/negative-tries-2.png)
+
+This is how it looks when I solved the bug?
+
+![negative-tries-3.png](assets/images/readme/bugs/negative-tries-3.png)
+
 ---
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
