@@ -1,8 +1,6 @@
 import { increase, decrease } from "./utils/scoring";
 import { hangmanImages, displayArrayToScreen } from "./components";
-import { randomArrayValue } from "./utils/miscellanous";
-
-let timer;
+import { randomArrayValue, startTimer } from "./utils/miscellanous";
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
@@ -56,16 +54,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-/**
- * starts timer on keydown event in alphabet string
- * @param id
- */
-function startTimer(id) {
-  // clear timer in case I need to restart
-  clearInterval(timer);
-
-  timer = setInterval(function () {
-    id.textContent = "";
-  }, 1000);
-}
