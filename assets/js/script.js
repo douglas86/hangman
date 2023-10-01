@@ -1,7 +1,7 @@
 import { hangmanImages, displayArrayToScreen } from "./components";
 
 import { randomArrayValue, startTimer } from "./utils/miscellanous";
-import { find } from "./utils/arrayMethods";
+import { find, map } from "./utils/arrayMethods";
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,17 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Function to find a string within an array
       find(splitNameToArray);
 
-      // checks if key is in array using a map
-      splitNameToArray.map((items, index) => {
-        if (items.toUpperCase() === event.key.toUpperCase()) {
-          arrayBlanks[index] = items;
-
-          let id = document.getElementById("letters");
-          id.innerHTML = " "; // clears a div element before appending to it
-
-          displayArrayToScreen(arrayBlanks);
-        }
-      });
+      // Function to map around and update another array
+      map(splitNameToArray, arrayBlanks);
     }
   });
 });
