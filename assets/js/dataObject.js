@@ -1,4 +1,4 @@
-export const names = [
+export const dataObject = [
   {
     name: "Japan",
     category: "countries",

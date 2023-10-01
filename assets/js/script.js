@@ -1,4 +1,4 @@
-import { names } from "./names.js";
+import { dataObject } from "./dataObject.js";
 
 import { increase, decrease } from "./utils/scoring";
 import { hangmanImages, displayArrayToScreen } from "./components";
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * randomly selects a value from names array
  */
 function randomArrayValue() {
-  return names[Math.floor(Math.random() * names.length)];
+  return dataObject[Math.floor(Math.random() * dataObject.length)];
 }
 
 /**
