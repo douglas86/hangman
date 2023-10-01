@@ -1,6 +1,7 @@
-import { increase, decrease } from "./utils/scoring";
 import { hangmanImages, displayArrayToScreen } from "./components";
+
 import { randomArrayValue, startTimer } from "./utils/miscellanous";
+import { find } from "./utils/arrayMethods";
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
@@ -32,13 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       startTimer(id);
 
-      // when it finds the key that was pressed in the array, it adds score by one
-      // when it doesn't find the key in array it subtracts one from score and tries
-      splitNameToArray.find(
-        (element) => element.toLowerCase() === event.key.toLowerCase(),
-      )
-        ? increase("scoring")
-        : decrease("scoring") || decrease("tries") || hangmanImages();
+      // Function to find a string within an array
+      find(splitNameToArray);
 
       // checks if key is in array using a map
       splitNameToArray.map((items, index) => {
