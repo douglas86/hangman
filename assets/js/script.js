@@ -1,7 +1,6 @@
-import { dataObject } from "./dataObject.js";
-
 import { increase, decrease } from "./utils/scoring";
 import { hangmanImages, displayArrayToScreen } from "./components";
+import { randomArrayValue } from "./utils/miscellanous";
 
 let timer;
 
@@ -57,13 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-/**
- * randomly selects a value from names array
- */
-function randomArrayValue() {
-  return dataObject[Math.floor(Math.random() * dataObject.length)];
-}
 
 /**
  * starts timer on keydown event in alphabet string
