@@ -24,11 +24,17 @@ h1 {
   color: #33976f;
   -webkit-text-stroke: 2px #008e93;
 }
+.keyboard-icon {
+  display: flex;
+  width: 100vw;
+}
 .keyboard {
+  position: fixed;
   border-radius: 50%;
-  padding: 2%;
+  padding: 2% 5%;
   background-color: transparent;
   border-style: none;
+  float: right;
 }
 
 /*main*/
