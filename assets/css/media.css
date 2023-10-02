@@ -39,6 +39,10 @@
   }
 
   /*main*/
+  #keyboard-icon {
+    display: none;
+    visibility: hidden;
+  }
   #hangman-image > img {
     width: 90%;
   }
