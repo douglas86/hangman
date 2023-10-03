@@ -1,3 +1,4 @@
+import Keyboard from "./components/organism/Keyboard.js";
 import { hangmanImages, displayArrayToScreen } from "./components";
 
 import { randomArrayValue, startTimer } from "./utils/miscellanous";
@@ -21,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Functions to load on page start
   hangmanImages(); // dynamically loads the hangman images to the display
   displayArrayToScreen(arrayBlanks); // function to load letters on display
+
+  // display keyboard layout on board
+  Keyboard();
 
   document.addEventListener("keydown", function (event) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
