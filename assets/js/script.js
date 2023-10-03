@@ -3,6 +3,7 @@ import { hangmanImages, displayArrayToScreen } from "./components";
 
 import { randomArrayValue, startTimer } from "./utils/miscellanous";
 import { find, map } from "./utils/arrayMethods";
+import { displayLetter } from "./components/atom";
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (alphabet.includes(event.key.toLowerCase())) {
       let id = document.getElementById("letter");
 
-      id.textContent = event.key.toUpperCase();
+      displayLetter(event.key);
 
       startTimer(id);
 
