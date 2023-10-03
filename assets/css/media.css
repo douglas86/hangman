@@ -10,10 +10,7 @@
   }
 
   /*main*/
-  .keyboard i {
-    font-size: 3.5rem;
-    padding: 0.5rem;
-  }
+
   #hangman-image > img {
     width: 80%;
   }
@@ -39,10 +36,7 @@
   }
 
   /*main*/
-  #keyboard-icon {
-    display: none;
-    visibility: hidden;
-  }
+
   #hangman-image > img {
     width: 90%;
   }

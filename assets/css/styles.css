@@ -24,22 +24,6 @@ h1 {
   color: #33976f;
   -webkit-text-stroke: 2px #008e93;
 }
-#keyboard-icon {
-  display: flex;
-  width: 100%;
-  height: 2.5rem;
-  align-items: flex-end;
-}
-.keyboard {
-  position: fixed;
-  background-color: transparent;
-  border-style: none;
-  width: 100%;
-}
-.keyboard i {
-  float: right;
-  padding: 2%;
-}
 
 /*main*/
 #scoring-and-images {
