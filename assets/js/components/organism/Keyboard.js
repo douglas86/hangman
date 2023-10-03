@@ -12,10 +12,11 @@ const Keyboard = () => {
   let objectAttributes;
 
   qwertyKeyboard.map((item) => {
+    // on object of all the attributes that are added onto the button element
     objectAttributes = {
       type: "button",
       class: "keyboard-buttons",
-      text: item,
+      text: item.toUpperCase(), // text to be displayed on the button tag - this is for the innerText method
     };
     // break up characters to give me the qwerty keyboard layout
     lineBreak.indexOf(item) !== -1
