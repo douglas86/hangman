@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let splitNameToArray = name.split("");
 
   createArray(splitNameToArray);
-  qwertyKeyboard();
+  qwertyKeyboard(splitNameToArray);
 
   document.addEventListener("keydown", function (event) {
     let keys = document.getElementsByClassName("keyboard-buttons");

@@ -4,7 +4,7 @@ import { lineBreak } from "../utils";
 /**
  * creating the qwerty keyboard on the screen
  */
-export const qwertyKeyboard = () => {
+export const qwertyKeyboard = (splitNameToArray) => {
   let keysLayout = "qwertyuiopasdfghjklzxcvbnm".split("");
   let lineBreakAfterCharacter = "plm".split("");
   let objectAttributes;
@@ -17,7 +17,7 @@ export const qwertyKeyboard = () => {
     };
 
     lineBreakAfterCharacter.indexOf(items) !== -1
-      ? lineBreak(objectAttributes)
-      : button(objectAttributes);
+      ? lineBreak(objectAttributes, splitNameToArray)
+      : button(objectAttributes, splitNameToArray);
   });
 };
