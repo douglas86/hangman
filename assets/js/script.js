@@ -1,9 +1,10 @@
 import Keyboard from "./components/organism/Keyboard.js";
 import { hangmanImages, displayArrayToScreen } from "./components";
 
-import { randomArrayValue, startTimer } from "./utils/miscellanous";
-import { find, map } from "./utils/arrayMethods";
 import { displayLetter } from "./components/atom";
+
+import { randomArrayValue } from "./utils/miscellanous";
+import { find, map } from "./utils/arrayMethods";
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
@@ -32,11 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // checks if the keydown character is in alphabet variable
     if (alphabet.includes(event.key.toLowerCase())) {
-      let id = document.getElementById("letter");
-
       displayLetter(event.key);
-
-      startTimer(id);
 
       // Function to find a string within an array
       find(splitNameToArray);
