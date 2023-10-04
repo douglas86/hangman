@@ -1,11 +1,11 @@
-import { split } from "../../utils/stringMethods";
+import { split } from "../../utils";
 import { br, button } from "../atom";
 
 /**
  * function to display the keyboard layout to screen
  * @constructor
  */
-const Keyboard = () => {
+const Keyboard = (splitNameToArray, arrayBlanks) => {
   let div = document.getElementsByClassName("keyboard-layout")[0];
   let qwertyKeyboard = split("qwertyuiopasdfghjklzxcvbnm");
   let lineBreak = split("plm"); // line break element to split button up giving a qwerty keyboard layout
@@ -20,8 +20,8 @@ const Keyboard = () => {
     };
     // break up characters to give me the qwerty keyboard layout
     lineBreak.indexOf(item) !== -1
-      ? br(div, objectAttributes)
-      : button(div, objectAttributes);
+      ? br(div, splitNameToArray, arrayBlanks, objectAttributes)
+      : button(div, objectAttributes, splitNameToArray, arrayBlanks);
   });
 };
 

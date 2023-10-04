@@ -1,6 +1,6 @@
 import Keyboard from "./components/organism/Keyboard.js";
-import { hangmanImages, displayArrayToScreen } from "./components";
 
+import { hangmanImages, displayArrayToScreen } from "./components";
 import { displayLetter } from "./components/atom";
 
 import { randomArrayValue, getElementsByClassName } from "./utils";
@@ -26,27 +26,26 @@ document.addEventListener("DOMContentLoaded", function () {
   displayArrayToScreen(arrayBlanks); // function to load letters on display
 
   // display keyboard layout on board
-  Keyboard();
+  Keyboard(splitNameToArray, arrayBlanks);
 
   document.addEventListener("keydown", function (event) {
     let btn = document.getElementsByClassName("keyboard-buttons");
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
+    // This object will be passed to getElementsByClassName method
+    let objectOfAttributes = {
+      attributeType: "class",
+      attributeName: "keyboard-buttons-clicked",
+    };
 
     // checks if the keydown character is in alphabet variable
     if (alphabet.includes(event.key.toLowerCase())) {
       displayLetter(event.key);
 
       // Function to find a string within an array
-      find(splitNameToArray);
+      find(splitNameToArray, event.key);
 
       // Function to map around and update another array
-      map(splitNameToArray, arrayBlanks);
-
-      // This object will be passed to getElementsByClassName method
-      let objectOfAttributes = {
-        attributeType: "class",
-        attributeName: "keyboard-buttons-clicked",
-      };
+      map(splitNameToArray, arrayBlanks, event.key);
 
       // Function to iterate over class name
       getElementsByClassName(btn, event.key.toLowerCase(), objectOfAttributes);

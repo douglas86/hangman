@@ -1,4 +1,4 @@
-import { setAttribute } from "../utils/elementFunctions";
+import { setAttribute } from "../utils";
 
 /**
  * passing in a param will print out the array to the screen were necessary
