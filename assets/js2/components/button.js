@@ -4,7 +4,10 @@ export const button = (objectAttributes) => {
 
   Object.entries(objectAttributes).map(([key, value]) => {
     key === "text"
-      ? (btn.innerText = `${value}`)
+      ? (btn.innerText = `${value}`) &&
+        btn.addEventListener("click", function () {
+          btn.setAttribute("class", "keyboard-buttons-clicked");
+        })
       : btn.setAttribute(key, `${value}`);
   });
 
