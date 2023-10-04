@@ -1,3 +1,5 @@
+import { setAttribute } from "../utils/elementFunctions";
+
 /**
  * generate the src attribute dynamically
  */
@@ -10,7 +12,7 @@ export const hangmanImages = () => {
       : `assets/images/hangman/0.png`;
   let id = document.getElementById("hanging");
 
-  id.setAttribute("src", images);
+  setAttribute(id, "src", images);
 
   id.value;
 };

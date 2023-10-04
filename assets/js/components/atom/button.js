@@ -1,4 +1,5 @@
 import { displayLetter } from "./displayLetter.js";
+import { setAttribute } from "../../utils/elementFunctions";
 
 /**
  * this function creates the buttons on the screen passing in an object of all the attributes
@@ -13,8 +14,9 @@ export const button = (appendToChild, objectAttributes) => {
       ? (btn.innerText = `${value}`) &&
         btn.addEventListener("click", function () {
           displayLetter(value);
+          setAttribute(btn, "class", "keyboard-buttons-clicked"); // changed class of button when clicked
         })
-      : btn.setAttribute(key, `${value}`);
+      : setAttribute(btn, key, `${value}`);
   });
 
   appendToChild.appendChild(btn);
