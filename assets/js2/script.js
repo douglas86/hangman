@@ -1,4 +1,4 @@
-import { createArray, randomValue } from "./utils";
+import { createArray, findLetterInArray, randomValue } from "./utils";
 import { displayLetter } from "./components";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("keydown", function (event) {
     if (alphabet.includes(event.key.toLowerCase())) {
       displayLetter(event.key); // displays a letter to screen
+      findLetterInArray(splitNameToArray, event.key);
     }
   });
 });
