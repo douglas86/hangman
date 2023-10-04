@@ -3,3 +3,4 @@
  */
 export * from "./createArray.js";
 export * from "./randomValue.js";
+export * from "./timer.js";

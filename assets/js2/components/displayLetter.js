@@ -1,7 +1,7 @@
-import { startTimer } from "../../utils";
+import { timer } from "../utils";
 
 /**
- * display a letter to screen
+ * display a letter to the screen when key event is triggered
  * @param letter
  */
 export const displayLetter = (letter) => {
@@ -9,5 +9,5 @@ export const displayLetter = (letter) => {
 
   id.innerText = letter.toUpperCase();
 
-  startTimer(id);
+  timer(id);
 };

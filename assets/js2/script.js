@@ -1,10 +1,16 @@
 import { createArray, randomValue } from "./utils";
+import { displayLetter } from "./components";
 
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
   let splitNameToArray = name.split("");
 
-  console.log("s", splitNameToArray);
-
   createArray(splitNameToArray);
+
+  document.addEventListener("keydown", function (event) {
+    if (alphabet.includes(event.key.toLowerCase())) {
+      displayLetter(event.key); // displays a letter to screen
+    }
+  });
 });
