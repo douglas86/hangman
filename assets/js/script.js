@@ -3,13 +3,13 @@ import { hangmanImages, displayArrayToScreen } from "./components";
 
 import { displayLetter } from "./components/atom";
 
-import { randomArrayValue } from "./utils/miscellanous";
-import { find, map } from "./utils/arrayMethods";
+import { randomArrayValue, getElementsByClassName } from "./utils";
+import { find, map, split } from "./utils";
 
 // wait for the document to load then run starting functions
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomArrayValue(); // using object destructuring will get the name out of the object in names.js
-  let splitNameToArray = name.split(""); // once an object has been grabbed will split the letters to an array
+  let splitNameToArray = split(name); // once an object has been grabbed will split the letters to an array
   let arrayBlanks = []; // array is responsible for the blank lines and will be updated based on keydown letters
 
   // for of loop to create the spacing for letters in an array
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Keyboard();
 
   document.addEventListener("keydown", function (event) {
+    let btn = document.getElementsByClassName("keyboard-buttons");
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     // checks if the keydown character is in alphabet variable
@@ -40,6 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Function to map around and update another array
       map(splitNameToArray, arrayBlanks);
+
+      // This object will be passed to getElementsByClassName method
+      let objectOfAttributes = {
+        attributeType: "class",
+        attributeName: "keyboard-buttons-clicked",
+      };
+
+      // Function to iterate over class name
+      getElementsByClassName(btn, event.key.toLowerCase(), objectOfAttributes);
     }
   });
 });
