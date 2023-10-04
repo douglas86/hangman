@@ -4,5 +4,6 @@
 export * from "./createArray.js";
 export * from "./findLetterInArray.js";
 export * from "./lineBreak.js";
+export * from "./playAudio.js";
 export * from "./randomValue.js";
 export * from "./timer.js";
