@@ -1,5 +1,4 @@
-import { createArray } from "../utils";
-import { find } from "../../js/utils";
+import { createArray, findLetterInArray } from "../utils";
 import { displayLetter } from "./displayLetter.js";
 
 export const button = (objectAttributes, splitNameToArray) => {
@@ -12,7 +11,7 @@ export const button = (objectAttributes, splitNameToArray) => {
         btn.addEventListener("click", function () {
           btn.setAttribute("class", "keyboard-buttons-clicked");
           createArray(splitNameToArray, value.toLowerCase());
-          find(splitNameToArray, value.toLowerCase());
+          findLetterInArray(splitNameToArray, value.toLowerCase());
           displayLetter(value);
         })
       : btn.setAttribute(key, `${value}`);
