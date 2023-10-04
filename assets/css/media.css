@@ -75,10 +75,19 @@
   #hangman-image {
     width: 50vw;
   }
+  #letters-spaces {
+    font-size: 5rem;
+  }
   #letter {
     font-size: 10rem;
   }
   #scoring-attempts > h2 {
     font-size: 500%;
+  }
+  .keyboard-buttons,
+  .keyboard-buttons-clicked {
+    font-size: 5rem;
+    width: 8rem;
+    height: 8rem;
   }
 }
