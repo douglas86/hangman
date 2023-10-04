@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("keydown", function (event) {
     if (alphabet.includes(event.key.toLowerCase())) {
       displayLetter(event.key); // displays a letter to screen
-      findLetterInArray(splitNameToArray, event.key);
+      findLetterInArray(splitNameToArray, event.key); // finds a letter in array and adjusts score as needed
     }
   });
 });

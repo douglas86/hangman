@@ -1,4 +1,4 @@
-import { setAttribute } from "../utils/elementFunctions";
+import { setAttribute } from "../utils";
 
 /**
  * generate the src attribute dynamically

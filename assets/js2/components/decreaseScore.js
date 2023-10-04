@@ -1,3 +1,5 @@
+import { hangmanImage } from "./hangmanImage.js";
+
 /**
  * decreases the score and tries variable
  */
@@ -7,4 +9,6 @@ export const decreaseScore = () => {
 
   scoring.textContent = (Number(scoring.textContent) - 1).toString();
   triesLeft.textContent = (Number(triesLeft.textContent) - 1).toString();
+
+  hangmanImage(Number(triesLeft.innerText));
 };
