@@ -10,7 +10,7 @@
 /*heading*/
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
 }
 #heading-image {
@@ -51,4 +51,25 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+}
+.keyboard-layout {
+  text-align: center;
+}
+.keyboard-buttons {
+  background-color: #0087a7;
+  color: black;
+  font-weight: bolder;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.keyboard-buttons-clicked {
+  background-color: #33976f;
+  color: black;
+  font-weight: bolder;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  padding: 0.2rem;
 }

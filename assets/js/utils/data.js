@@ -1,4 +1,8 @@
-export const names = [
+/**
+ * all data for the entire project
+ * @type {[{clue: string, name: string, category: string},{clue: string, name: string, category: string},{clue: string, name: string, category: string},{clue: string, name: string, category: string},{clue: string, name: string, category: string},null,null,null,null,null]}
+ */
+export const data = [
   {
     name: "Japan",
     category: "countries",

@@ -13,6 +13,9 @@
   #hangman-image > img {
     width: 80%;
   }
+  #letters-spaces {
+    font-size: 3rem;
+  }
   #letter {
     font-size: 6rem;
     padding: 1rem;
@@ -20,6 +23,14 @@
   #scoring-attempts > h2 {
     font-size: 2rem;
     padding: 2rem;
+  }
+  .keyboard-layout {
+    margin-top: 5rem;
+  }
+  .keyboard-buttons,
+  .keyboard-buttons-clicked {
+    width: 3rem;
+    height: 3rem;
   }
 }
 
@@ -42,6 +53,11 @@
     font-size: 3rem;
     padding: 4rem;
   }
+  .keyboard-buttons,
+  .keyboard-buttons-clicked {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 /*Media query: 4k monitors*/
@@ -59,10 +75,19 @@
   #hangman-image {
     width: 50vw;
   }
+  #letters-spaces {
+    font-size: 5rem;
+  }
   #letter {
     font-size: 10rem;
   }
   #scoring-attempts > h2 {
     font-size: 500%;
+  }
+  .keyboard-buttons,
+  .keyboard-buttons-clicked {
+    font-size: 5rem;
+    width: 8rem;
+    height: 8rem;
   }
 }
