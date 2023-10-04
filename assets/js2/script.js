@@ -1,5 +1,5 @@
 import { createArray, findLetterInArray, randomValue } from "./utils";
-import { displayLetter } from "./components";
+import { displayLetter, qwertyKeyboard } from "./components";
 
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let splitNameToArray = name.split("");
 
   createArray(splitNameToArray);
+  qwertyKeyboard();
 
   document.addEventListener("keydown", function (event) {
     if (alphabet.includes(event.key.toLowerCase())) {
