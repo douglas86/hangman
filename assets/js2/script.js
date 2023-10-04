@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (alphabet.includes(event.key.toLowerCase())) {
       displayLetter(event.key); // displays a letter to screen
       findLetterInArray(splitNameToArray, event.key); // finds a letter in array and adjusts score as needed
+      createArray(splitNameToArray, event.key); // when the second parameter is passed, it updates the array displayed
     }
   });
 });
