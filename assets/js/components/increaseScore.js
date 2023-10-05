@@ -1,9 +1,8 @@
-import { playAudio } from "../utils";
-
 export const increaseScore = () => {
   let id = document.getElementById("scoring");
+  let audio = new Audio("assets/sounds/tada.mp3");
 
   id.textContent = (Number(id.textContent) + 2).toString();
 
-  playAudio("assets/sounds/tada.mp3");
+  audio.play().catch(() => throw `File unable to play`);
 };

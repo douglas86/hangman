@@ -1,5 +1,5 @@
 import { button } from "./button.js";
-import { lineBreak } from "../utils";
+import { lineBreak } from "../utils/lineBreak.js";
 
 /**
  * creating the qwerty keyboard on the screen

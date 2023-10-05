@@ -1,5 +1,9 @@
-import { createArray, findLetterInArray, randomValue } from "./utils";
-import { displayLetter, qwertyKeyboard } from "./components";
+import { displayLetter } from "./components/displayLetter.js";
+
+import { createArray } from "./utils/createArray.js";
+import { findLetterInArray } from "./utils/findLetterInArray.js";
+import { randomValue } from "./utils/randomValue.js";
+import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
