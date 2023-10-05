@@ -5,5 +5,5 @@ export const increaseScore = () => {
 
   id.textContent = (Number(id.textContent) + 2).toString();
 
-  playAudio("assets/sounds/tada.mp3");
+  playAudio();
 };

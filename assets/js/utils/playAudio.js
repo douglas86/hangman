@@ -1,4 +1,4 @@
-export const playAudio = (file) => {
-  let audio = new Audio(file);
+export const playAudio = () => {
+  let audio = new Audio("assets/sounds/tada.mp3");
   audio.play();
 };
