@@ -1,4 +1,5 @@
-import { displayLetter, qwertyKeyboard } from "./components";
+import { displayLetter } from "./components/displayLetter.js";
+import { qwertyKeyboard } from "./components/quertyKeyboard.js";
 
 import { createArray } from "./utils/createArray.js";
 import { findLetterInArray } from "./utils/findLetterInArray.js";
