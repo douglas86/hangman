@@ -1,6 +1,6 @@
 export const increaseScore = () => {
   let id = document.getElementById("scoring");
-  let audio = new Audio("assets/sounds/tada.mp3");
+  let audio = new Audio("../../sounds/tada.mp3");
 
   id.textContent = (Number(id.textContent) + 2).toString();
 
