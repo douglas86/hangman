@@ -13,5 +13,5 @@ export const decreaseScore = () => {
 
   hangmanImage(Number(triesLeft.innerText));
 
-  playAudio("assets/sounds/pencil.mp3");
+  playAudio("../../sounds/pencil.mp3");
 };
