@@ -1,5 +1,5 @@
 import { hangmanImage } from "./hangmanImage.js";
-import { playAudio } from "../utils";
+import { playAudio } from "../utils/playAudio.js";
 
 /**
  * decreases the score and tries variable

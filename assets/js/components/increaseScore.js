@@ -1,4 +1,4 @@
-import { playAudio } from "../utils";
+import { playAudio } from "../utils/playAudio.js";
 
 export const increaseScore = () => {
   let id = document.getElementById("scoring");
