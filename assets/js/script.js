@@ -3,7 +3,7 @@ import { displayLetter } from "./components/displayLetter.js";
 import { createArray } from "./utils/createArray.js";
 import { findLetterInArray } from "./utils/findLetterInArray.js";
 import { randomValue } from "./utils/randomValue.js";
-import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
+// import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let splitNameToArray = name.split("");
 
   createArray(splitNameToArray);
-  qwertyKeyboard(splitNameToArray);
+  // qwertyKeyboard(splitNameToArray);
 
   document.addEventListener("keydown", function (event) {
     let keys = document.getElementsByClassName("keyboard-buttons");
