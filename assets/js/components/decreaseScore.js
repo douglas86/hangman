@@ -13,5 +13,5 @@ export const decreaseScore = () => {
 
   hangmanImage(Number(triesLeft.innerText));
 
-  audio.play().catch(() => throw `File unable to play`);
+  audio.play();
 };

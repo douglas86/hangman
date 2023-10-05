@@ -4,5 +4,5 @@ export const increaseScore = () => {
 
   id.textContent = (Number(id.textContent) + 2).toString();
 
-  audio.play().catch(() => throw `File unable to play`);
+  audio.play();
 };
