@@ -1,4 +1,4 @@
-import { button } from "../components";
+import { button } from "../components/button.js";
 
 export const lineBreak = (objectAttributes, splitNameToArray) => {
   let div = document.getElementsByClassName("keyboard-layout")[0];

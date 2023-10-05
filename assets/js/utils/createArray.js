@@ -1,4 +1,4 @@
-import { displayArray } from "../components";
+import { displayArray } from "../components/displayArray.js";
 
 /**
  * this will create the blanks need it for an initial load

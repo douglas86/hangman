@@ -1,4 +1,4 @@
-import { timer } from "../utils";
+import { timer } from "../utils/timer.js";
 
 /**
  * display a letter to the screen when key event is triggered

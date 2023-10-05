@@ -1,5 +1,7 @@
-import { createArray, findLetterInArray } from "../utils";
 import { displayLetter } from "./displayLetter.js";
+
+import { createArray } from "../utils/createArray.js";
+import { findLetterInArray } from "../utils/findLetterInArray.js";
 
 export const button = (objectAttributes, splitNameToArray) => {
   let div = document.getElementsByClassName("keyboard-layout")[0];
