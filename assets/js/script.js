@@ -1,14 +1,13 @@
-import { displayLetter } from "./components/displayLetter.js";
-
 import { createArray } from "./utils/createArray.js";
-import { findLetterInArray } from "./utils/findLetterInArray.js";
 import { randomValue } from "./utils/randomValue.js";
 import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
+import { checkLetterUsed } from "./utils/checkLetterUsed.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
   let splitNameToArray = name.split("");
+  let keysPressed = []; // captures all the keys that were pressed
 
   createArray(splitNameToArray);
   qwertyKeyboard(splitNameToArray);
@@ -16,10 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("keydown", function (event) {
     let keys = document.getElementsByClassName("keyboard-buttons");
     if (alphabet.includes(event.key.toLowerCase())) {
-      displayLetter(event.key); // displays a letter to screen
-      findLetterInArray(splitNameToArray, event.key); // finds a letter in array and adjusts score as needed
-      createArray(splitNameToArray, event.key); // when the second parameter is passed, it updates the array displayed
-      // when a letter is pressed on the keyboard the class of the keyboard will change
+      // check to see if a letter has already been pressed
+      // if a letter has not been pressed update scores
+      // if a letter has been pressed do nothing
+      keysPressed.indexOf(event.key.toLowerCase()) === -1 &&
+        checkLetterUsed(splitNameToArray, event.key);
+
+      // when a letter on keyboard used append to keysPressed array
+      keysPressed.push(event.key.toLowerCase());
+
+      // when a letter is pressed on the keyboard, the class of the keyboard will change
       // to give different styling to keys
       for (let i = 0; i < keys.length; i++) {
         if (keys[i].innerText.toLowerCase() === event.key.toLowerCase()) {
