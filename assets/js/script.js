@@ -3,12 +3,11 @@ import { randomValue } from "./utils/randomValue.js";
 import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
 import { checkLetterUsed } from "./utils/checkLetterUsed.js";
 
-let keysPressed = []; // captures all the keys that were pressed
-
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
   let splitNameToArray = name.split("");
+  let keysPressed = []; // captures all the keys that were pressed
 
   createArray(splitNameToArray);
   qwertyKeyboard(splitNameToArray);
