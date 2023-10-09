@@ -12,11 +12,11 @@
   /*main*/
   main {
     display: flex;
-    margin: 8%;
+    margin: 5%;
   }
   /*hangman image and keydown letter*/
   #hangman-image-letter {
-    width: 50%;
+    width: 40%;
   }
   .hangman-image > img {
     width: 15rem;
@@ -26,8 +26,8 @@
     margin: -1rem;
   }
   /*score, triesLeft and guessed word*/
-  #scoring-tries-characters {
-    width: 50%;
+  #scoring-tries-characters-keyboard {
+    width: 60%;
   }
   #score {
     display: inline-block;
@@ -40,29 +40,15 @@
   .spacing {
     margin: 0 0.1rem;
   }
-
-  /*#hangman-image > img {*/
-  /*  width: 80%;*/
-  /*}*/
-  /*#letters-spaces {*/
-  /*  font-size: 3rem;*/
-  /*}*/
-  /*#letter {*/
-  /*  font-size: 6rem;*/
-  /*  padding: 1rem;*/
-  /*}*/
-  /*#scoring-attempts > h2 {*/
-  /*  font-size: 2rem;*/
-  /*  padding: 2rem;*/
-  /*}*/
-  /*.keyboard-layout {*/
-  /*  margin-top: 5rem;*/
-  /*}*/
-  /*.keyboard-buttons,*/
-  /*.keyboard-buttons-clicked {*/
-  /*  width: 3rem;*/
-  /*  height: 3rem;*/
-  /*}*/
+  /*keyboard*/
+  .keyboard-layout {
+    margin-top: 3rem;
+  }
+  .keyboard-buttons,
+  .keyboard-buttons-clicked {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 }
 
 /*Media query: laptop and larger*/
@@ -89,19 +75,15 @@
     font-size: 1.5rem;
     margin: 1.5rem;
   }
-
-  /*#hangman-image > img {*/
-  /*  width: 90%;*/
-  /*}*/
-  /*#scoring-attempts > h2 {*/
-  /*  font-size: 3rem;*/
-  /*  padding: 4rem;*/
-  /*}*/
-  /*.keyboard-buttons,*/
-  /*.keyboard-buttons-clicked {*/
-  /*  width: 5rem;*/
-  /*  height: 5rem;*/
-  /*}*/
+  #hangman-image-letter {
+    width: 30%;
+  }
+  .hangman-image > img {
+    width: 15rem;
+  }
+  #scoring-tries-characters-keyboard {
+    width: 70%;
+  }
 }
 
 /*Media query: 4k monitors*/
@@ -118,32 +100,22 @@
   /*main*/
   /*hangman image and keydown letter*/
   .hangman-image > img {
-    width: 50rem;
+    width: 40rem;
   }
   .keydown-letter {
     font-size: 15rem;
   }
   /*score, triesLeft and guessed word*/
   #score {
+    font-size: 4rem;
+  }
+  .guessed-word {
+    font-size: 5rem;
+  }
+  .keyboard-buttons,
+  .keyboard-buttons-clicked {
+    width: 8rem;
+    height: 8rem;
     font-size: 3rem;
   }
-
-  /*#hangman-image {*/
-  /*  width: 50vw;*/
-  /*}*/
-  /*#letters-spaces {*/
-  /*  font-size: 5rem;*/
-  /*}*/
-  /*#letter {*/
-  /*  font-size: 10rem;*/
-  /*}*/
-  /*#scoring-attempts > h2 {*/
-  /*  font-size: 500%;*/
-  /*}*/
-  /*.keyboard-buttons,*/
-  /*.keyboard-buttons-clicked {*/
-  /*  font-size: 5rem;*/
-  /*  width: 8rem;*/
-  /*  height: 8rem;*/
-  /*}*/
 }

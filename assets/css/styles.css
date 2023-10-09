@@ -38,7 +38,7 @@ h1 {
 .image {
   width: 60%;
 }
-.keydown-letter {
+#keydown-letter {
   position: absolute;
   font-size: 4rem;
   margin: 1rem;
@@ -57,50 +57,26 @@ h1 {
   font-size: 1.5rem;
 }
 
-/*#scoring-and-images {*/
-/*  display: flex;*/
-/*  width: 100%;*/
-/*}*/
-/*#hangman-image {*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*}*/
-/*#hangman-image > img {*/
-/*  width: 50%;*/
-/*}*/
-/*#letter {*/
-/*  position: absolute;*/
-/*  font-size: 200%;*/
-/*}*/
-/*#scoring-attempts {*/
-/*  width: 100%;*/
-/*}*/
-/*#scoring-attempts > h2 {*/
-/*  font-size: 100%;*/
-/*}*/
-/*#letters {*/
-/*  display: flex;*/
-/*  justify-content: space-between;*/
-/*  padding: 1rem;*/
-/*}*/
-/*.keyboard-layout {*/
-/*  text-align: center;*/
-/*}*/
-/*.keyboard-buttons {*/
-/*  background-color: #0087a7;*/
-/*  color: black;*/
-/*  font-weight: bolder;*/
-/*  width: 1.8rem;*/
-/*  height: 1.8rem;*/
-/*  border-radius: 50%;*/
-/*  padding: 0.2rem;*/
-/*}*/
-/*.keyboard-buttons-clicked {*/
-/*  background-color: #33976f;*/
-/*  color: black;*/
-/*  font-weight: bolder;*/
-/*  width: 1.8rem;*/
-/*  height: 1.8rem;*/
-/*  border-radius: 50%;*/
-/*  padding: 0.2rem;*/
-/*}*/
+/*keyboard*/
+.keyboard-layout {
+  text-align: center;
+  margin: 1rem;
+}
+.keyboard-buttons {
+  background-color: #0087a7;
+  color: black;
+  font-weight: bolder;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.keyboard-buttons-clicked {
+  background-color: #33976f;
+  color: black;
+  font-weight: bolder;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
