@@ -14,10 +14,8 @@ export const createArray = (array, key = "none") => {
     // This will update the array on the screen
     array.find((element, index) => {
       if (element.toLowerCase() === key.toLowerCase()) {
-        // if the first letter in the array is true, make letter capital
-        index === 0
-          ? (className[index].innerText = key.toUpperCase())
-          : (className[index].innerText = key);
+        // if check true replace space with character in a letters array
+        className[index].innerText = key.toUpperCase();
       }
     });
   } else {
