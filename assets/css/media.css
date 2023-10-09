@@ -18,9 +18,12 @@
   #hangman-image-letter {
     width: 40%;
   }
-  .hangman-image > img {
-    width: 15rem;
+  .hangman-image {
+    margin: 2%;
   }
+  /*.hangman-image > img {*/
+  /*  width: 12rem;*/
+  /*}*/
   .keydown-letter {
     font-size: 5rem;
     margin: -1rem;
