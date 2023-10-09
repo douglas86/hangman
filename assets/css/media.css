@@ -121,4 +121,12 @@
     height: 8rem;
     font-size: 3rem;
   }
+
+  /*footer*/
+  footer ul {
+    padding: 2rem;
+  }
+  footer a {
+    font-size: 10rem;
+  }
 }

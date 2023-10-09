@@ -8,6 +8,9 @@
 }
 body {
   background-color: #c1e6f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*heading*/
@@ -125,6 +128,7 @@ h1 {
 
 /*footer*/
 footer {
+  margin-top: auto;
   background-color: #b7bdc4;
   width: 100vw;
 }
