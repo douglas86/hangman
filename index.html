@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!--    meta tags-->
+    <!--meta tags-->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -11,21 +11,21 @@
     <meta name="description" content="Hangman game" />
     <meta name="keywords" content="hangman,scoring" />
 
-    <!--    Favicon icon-->
+    <!--Favicon icon-->
     <link
       rel="shortcut icon"
       href="assets/images/favicon/favicon.webp"
       type="image/x-icon"
     />
 
-    <!--    style sheets-->
+    <!--style sheets-->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
 
-    <!--    document title-->
+    <!--document title-->
     <title>Hangman</title>
 
-    <!--    font awesome kit-->
+    <!--font awesome kit-->
     <script
       src="https://kit.fontawesome.com/a254ad7cf6.js"
       crossorigin="anonymous"
@@ -42,36 +42,39 @@
     </header>
 
     <main>
-      <section id="scoring-and-images">
-        <div id="hangman-image">
+      <!-- NOTE: this will be to re-organise the sections -->
+
+      <section id="hangman-image-letter">
+        <!--hangman image-->
+        <div class="hangman-image">
           <img
-            id="hanging"
+            class="image"
             src="assets/images/hangman/10.png"
             alt="Images for hangman incorrect answers"
           />
         </div>
 
-        <div id="letter"></div>
+        <!--keydown letter and button click letter to be displayed here-->
+        <div id="keydown-letter"></div>
+      </section>
 
-        <div id="scoring-attempts">
-          <h2>Score: <span id="scoring">0</span></h2>
+      <section id="scoring-tries-characters-keyboard">
+        <!--score and tries left to be displayed-->
+        <div id="score">
+          <h2>Scoring: <span id="scoring">0</span></h2>
           <h2>Tries Left: <span id="tries">10</span></h2>
         </div>
-      </section>
+        <!--the word to be guessed is going to show here-->
+        <div class="guessed-word"></div>
 
-      <section id="letters-spaces">
-        <div id="letters"></div>
-      </section>
-
-      <!--      keyboard Layout-->
-      <section id="keyboard">
+        <!--        keyboard-->
         <div class="keyboard-layout"></div>
       </section>
     </main>
 
     <footer></footer>
 
-    <!--  scripts-->
+    <!--scripts-->
     <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>

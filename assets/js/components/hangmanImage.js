@@ -3,7 +3,7 @@
  * @param triesLeft
  */
 export const hangmanImage = (triesLeft) => {
-  let id = document.getElementById("hanging");
+  let id = document.getElementsByClassName("image")[0];
   let images =
     triesLeft > 0
       ? `assets/images/hangman/${triesLeft}.png`

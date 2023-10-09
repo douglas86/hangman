@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #c1e6f5;
 }
 
 /*heading*/
@@ -26,34 +27,80 @@ h1 {
 }
 
 /*main*/
-#scoring-and-images {
+/*hangman image and keydown letter*/
+#hangman-image-letter {
   display: flex;
-  width: 100%;
+  width: 100vw;
 }
-#hangman-image {
-  display: flex;
+/*This section was taken from: https://codepen.io/chris22smith/pen/PbBwjp*/
+/*this is to get a picture frame look on an image*/
+/*it was modified slightly to make it compatible with my design*/
+.hangman-image {
   justify-content: center;
+  background-color: #ddc;
+  border-radius: 2px;
+  border: 5vmin solid #eee;
+  border-top-color: #ddd;
+  border-bottom-color: #fff;
+  margin: 0 20%;
+  box-shadow:
+    0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  &:before {
+    border-radius: 2px;
+    bottom: -2vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+    content: "";
+    left: -2vmin;
+    position: absolute;
+    right: -2vmin;
+    top: -2vmin;
+  }
+  &:after {
+    border-radius: 2px;
+    bottom: -2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    content: "";
+    left: -2.5vmin;
+    position: absolute;
+    right: -2.5vmin;
+    top: -2.5vmin;
+  }
 }
-#hangman-image > img {
-  width: 50%;
+.image {
+  border: 2px solid #eed;
+  border-top-color: #ccb;
+  border-bottom-color: #ffe;
+  max-height: 100%;
+  max-width: 100%;
 }
-#letter {
+#keydown-letter {
   position: absolute;
-  font-size: 200%;
+  font-size: 4rem;
+  margin: 1rem;
 }
-#scoring-attempts {
-  width: 100%;
-}
-#scoring-attempts > h2 {
-  font-size: 100%;
-}
-#letters {
+/*score, triesLeft and guessed word*/
+#score {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  margin: 1.2rem;
+  font-size: 1rem;
 }
+.guessed-word {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+/*keyboard*/
 .keyboard-layout {
   text-align: center;
+  margin: 1rem;
 }
 .keyboard-buttons {
   background-color: #0087a7;
