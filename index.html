@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!--    meta tags-->
+    <!--meta tags-->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -11,21 +11,21 @@
     <meta name="description" content="Hangman game" />
     <meta name="keywords" content="hangman,scoring" />
 
-    <!--    Favicon icon-->
+    <!--Favicon icon-->
     <link
       rel="shortcut icon"
       href="assets/images/favicon/favicon.webp"
       type="image/x-icon"
     />
 
-    <!--    style sheets-->
+    <!--style sheets-->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
 
-    <!--    document title-->
+    <!--document title-->
     <title>Hangman</title>
 
-    <!--    font awesome kit-->
+    <!--font awesome kit-->
     <script
       src="https://kit.fontawesome.com/a254ad7cf6.js"
       crossorigin="anonymous"
@@ -42,36 +42,53 @@
     </header>
 
     <main>
-      <section id="scoring-and-images">
-        <div id="hangman-image">
-          <img
-            id="hanging"
-            src="assets/images/hangman/10.png"
-            alt="Images for hangman incorrect answers"
-          />
-        </div>
+      <!-- NOTE: this will be to re-organise the sections -->
 
-        <div id="letter"></div>
+      <!-- TODO: create a section tag for hangman image and letter -->
+      <!-- TODO: giving the section tag an id of hangman-image-letter -->
+      <section id="hangman-image-letter"></section>
 
-        <div id="scoring-attempts">
-          <h2>Score: <span id="scoring">0</span></h2>
-          <h2>Tries Left: <span id="tries">10</span></h2>
-        </div>
-      </section>
+      <!-- TODO: create a section tag for scoring, tries and displayed characters -->
+      <!-- TODO: giving the section tag an id of scoring-tries-characters -->
+      <section id="scoring-tries-characters"></section>
 
-      <section id="letters-spaces">
-        <div id="letters"></div>
-      </section>
-
-      <!--      keyboard Layout-->
-      <section id="keyboard">
-        <div class="keyboard-layout"></div>
-      </section>
+      <!-- TODO: create a section tag for the keyboard -->
+      <!-- TODO: giving the section tag an id of keyboard -->
+      <section id="keyboard"></section>
     </main>
+
+    <!--    <main>-->
+    <!--      <section id="scoring-and-images">-->
+    <!--        <div id="hangman-image">-->
+    <!--          <img-->
+    <!--            id="hanging"-->
+    <!--            src="assets/images/hangman/10.png"-->
+    <!--            alt="Images for hangman incorrect answers"-->
+    <!--          />-->
+    <!--        </div>-->
+
+    <!--        &lt;!&ndash;when a letter is typed on the keyboard it gets displayed here&ndash;&gt;-->
+    <!--        <div id="letter"></div>-->
+
+    <!--        <div id="scoring-attempts">-->
+    <!--          <h2>Score: <span id="scoring">0</span></h2>-->
+    <!--          <h2>Tries Left: <span id="tries">10</span></h2>-->
+    <!--        </div>-->
+    <!--      </section>-->
+
+    <!--      <section id="letters-spaces">-->
+    <!--        <div id="letters"></div>-->
+    <!--      </section>-->
+
+    <!--      &lt;!&ndash;keyboard Layout&ndash;&gt;-->
+    <!--      <section id="keyboard">-->
+    <!--        <div class="keyboard-layout"></div>-->
+    <!--      </section>-->
+    <!--    </main>-->
 
     <footer></footer>
 
-    <!--  scripts-->
+    <!--scripts-->
     <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>
