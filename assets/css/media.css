@@ -25,6 +25,11 @@
     font-size: 5rem;
     margin: -1rem;
   }
+  /*score, triesLeft and guessed word*/
+  #score {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
 
   /*#hangman-image > img {*/
   /*  width: 80%;*/
@@ -69,6 +74,11 @@
   .keydown-letter {
     font-size: 7rem;
   }
+  /*score, triesLeft and guessed word*/
+  #score {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
 
   /*#hangman-image > img {*/
   /*  width: 90%;*/
@@ -102,6 +112,10 @@
   }
   .keydown-letter {
     font-size: 15rem;
+  }
+  /*score, triesLeft and guessed word*/
+  #score {
+    font-size: 3rem;
   }
 
   /*#hangman-image {*/
