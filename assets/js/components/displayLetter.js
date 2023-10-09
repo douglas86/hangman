@@ -5,7 +5,7 @@ import { timer } from "../utils/timer.js";
  * @param letter
  */
 export const displayLetter = (letter) => {
-  let id = document.getElementById("letter");
+  let id = document.getElementById("keydown-letter");
 
   id.innerText = letter.toUpperCase();
 

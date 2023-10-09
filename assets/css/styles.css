@@ -26,6 +26,7 @@ h1 {
 }
 
 /*main*/
+/*hangman image and keydown letter*/
 #hangman-image-letter {
   display: flex;
   width: 100vw;
@@ -35,7 +36,12 @@ h1 {
   justify-content: center;
 }
 .image {
-  width: 50%;
+  width: 60%;
+}
+.keydown-letter {
+  position: absolute;
+  font-size: 4rem;
+  margin: 1rem;
 }
 
 /*#scoring-and-images {*/

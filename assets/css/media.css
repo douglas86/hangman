@@ -12,13 +12,18 @@
   /*main*/
   main {
     display: flex;
-    margin: 10%;
+    margin: 8%;
   }
+  /*hangman image and keydown letter*/
   #hangman-image-letter {
     width: 50%;
   }
   .hangman-image > img {
     width: 15rem;
+  }
+  .keydown-letter {
+    font-size: 5rem;
+    margin: -1rem;
   }
 
   /*#hangman-image > img {*/
@@ -57,8 +62,12 @@
   }
 
   /*main*/
+  /*hangman image and keydown letter*/
   .hangman-image > img {
-    width: 20rem;
+    width: 25rem;
+  }
+  .keydown-letter {
+    font-size: 7rem;
   }
 
   /*#hangman-image > img {*/
@@ -87,8 +96,12 @@
   }
 
   /*main*/
+  /*hangman image and keydown letter*/
   .hangman-image > img {
     width: 50rem;
+  }
+  .keydown-letter {
+    font-size: 15rem;
   }
 
   /*#hangman-image {*/
