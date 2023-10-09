@@ -26,6 +26,17 @@ h1 {
 }
 
 /*main*/
+#hangman-image-letter {
+  display: flex;
+  width: 100vw;
+}
+.hangman-image {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  width: 50%;
+}
 
 /*#scoring-and-images {*/
 /*  display: flex;*/
