@@ -2,7 +2,7 @@ import { createArray } from "./utils/createArray.js";
 import { randomValue } from "./utils/randomValue.js";
 import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
 import { checkLetterUsed } from "./utils/checkLetterUsed.js";
-import { overlayOnClick } from "./utils/overlayOnClick.js";
+import { overlay } from "./utils/overlay.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   createArray(splitNameToArray);
   qwertyKeyboard(splitNameToArray);
-  overlayOnClick();
+  overlay();
 
   document.addEventListener("keydown", function (event) {
     let keys = document.getElementsByClassName("keyboard-buttons");
