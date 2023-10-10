@@ -8,6 +8,10 @@
   h1 {
     font-size: 300%;
   }
+  .question {
+    font-size: 2.3rem;
+    margin-top: -1.5rem;
+  }
 
   /*main*/
   main {
