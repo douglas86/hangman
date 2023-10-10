@@ -103,6 +103,11 @@
   h1 {
     font-size: 1000%;
   }
+  .question {
+    font-size: 6rem;
+    margin-top: -2rem;
+    margin-right: 3rem;
+  }
 
   /*main*/
   /*hangman image and keydown letter*/
