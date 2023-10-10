@@ -2,7 +2,7 @@ import { createArray } from "./utils/createArray.js";
 import { randomValue } from "./utils/randomValue.js";
 import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
 import { checkLetterUsed } from "./utils/checkLetterUsed.js";
-import { overlay } from "./utils/overlay.js";
+import { overlay } from "./components/overlay.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array

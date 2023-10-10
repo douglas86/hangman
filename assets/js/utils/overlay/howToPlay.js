@@ -1,4 +1,4 @@
-export const overlay = () => {
+export const howToPlay = () => {
   let classes = document.getElementsByClassName("question")[0];
   let id = document.getElementById("overlay");
   let text = document.getElementsByClassName("overlay-text")[0];
