@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   };
 
+  // this event listener is to listen for the word that you need to guess to change
+  //   when it changes it resets the keysClicked array
+  // this still needs to be broken into its own file - haven't gotten it right yet
   const observer = new MutationObserver(callback);
 
   observer.observe(hidden, config);
