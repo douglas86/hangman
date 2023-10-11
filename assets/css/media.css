@@ -14,13 +14,18 @@
   }
 
   /*main*/
-  /* TODO: the styling of the overlay needs to be done */
-  /* FIX: the overlay doesn't quiet fit to the end of the screen */
-
   main {
     display: flex;
     margin: 5%;
   }
+  /*overlay*/
+  #overlay {
+    left: 0;
+  }
+  .overlay-text {
+    font-size: 1.5rem;
+  }
+
   /*hangman image and keydown letter*/
   #hangman-image-letter {
     width: 40%;
