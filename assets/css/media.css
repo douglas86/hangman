@@ -118,6 +118,10 @@
   }
 
   /*main*/
+  .overlay-text {
+    font-size: 5rem;
+  }
+
   /*hangman image and keydown letter*/
   .hangman-image > img {
     width: 40rem;
