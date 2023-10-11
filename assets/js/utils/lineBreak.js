@@ -1,10 +1,10 @@
 import { button } from "../components/button.js";
 
-export const lineBreak = (objectAttributes, splitNameToArray) => {
+export const lineBreak = (objectAttributes) => {
   let div = document.getElementsByClassName("keyboard-layout")[0];
   let b = document.createElement("br");
 
-  button(objectAttributes, splitNameToArray);
+  button(objectAttributes);
 
   div.appendChild(b);
 };

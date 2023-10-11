@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let keysPressed = []; // captures all the keys that were pressed
 
   createArray(splitStringToArray());
-  qwertyKeyboard(splitStringToArray());
+  qwertyKeyboard();
   overlay();
 
   // This event listener attaches to the music button
@@ -31,16 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const config = { childList: true };
 
   const callback = (mutationList) => {
-    for (const mutation of mutationList) {
+    for (const mutation of mutationList)
       if (mutation.type === "childList") {
         guess.innerHTML = "";
         createArray(splitStringToArray());
-        // when word changes reset all buttons back to original class
+        // when word changes reset all buttons back to the original class
         Object.values(keyboard).map((item) => {
           item.setAttribute("class", "keyboard-buttons");
         });
+        keysPressed = [];
       }
-    }
   };
 
   const observer = new MutationObserver(callback);
