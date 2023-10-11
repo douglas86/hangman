@@ -24,6 +24,7 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Technology Used](#technology-used)
     - [GitHub: Pros and Cons](#github-pros-and-cons)
     - [Jetbrains Spaces: Pros and Cons](#jetbrains-spaces-pros-and-cons)
+  - [Testing](#testing)
   - [Wire framing](#wire-framing)
     - [Mobile Devices](#mobile-device)
     - [Tablet Devices](#tablet-device)
@@ -70,6 +71,31 @@ their products are good and I enjoy using them.
 | Excellent tool for using in collaboration              | Can't mix different paid plans                |
 | Integrates well with Jetbrains products                | Can only create private repositories          |
 | Easy to organise repositories into projects            |                                               |
+
+### [Testing](#table-of-content)
+
+| What is being tested?                                                                          | Result |
+|------------------------------------------------------------------------------------------------|--------|
+| Music is not playing when button are clicked                                                   | PASS   |
+| Music plays when sound button is toggled                                                       | PASS   |
+| When qwerty keyboard button is clicked letter displays, saying the character that was pressed  | PASS   |
+| When keyboard letter is pressed the letter is displayed                                        | PASS   |
+| You can only press the keyboard character once                                                 | PASS   |
+| You can only click a specific button on qwerty keyboard once                                   | PASS   |
+| If you click a letter on keyboard then switch to qwerty keyboard button it only registers once | FAIL   |
+| scoring adds by 2 for every correct character                                                  | PASS   |
+| scoring subtracts by 1 for every incorrect character                                           | PASS   |
+| tries subtracts by 1 for every incorrect character                                             | PASS   |
+| once tries hits 0 the hangman image is showing the full picture                                | PASS   |
+| hangman image changes on tries change                                                          | PASS   |
+| if tries hits 0 the overlay will display saying game loss                                      | PASS   |
+| if score greater than or equal to 100 overlay will display saying congratulations              | PASS   |
+| then "?" mark next to header will say how to play                                              | PASS   |
+| as soon as the correct array is filled in, it shows a new word to quess                        | PASS   |
+| all external links open in a new tab                                                           | PASS   |
+| keyboard buttons change when clicked or keydown event is triggered                             | PASS   |
+| website layout is responsive                                                                   | PASS   |
+| code not written by me, has a comment above it                                                 | PASS   |
 
 ### [Wire framing](#table-of-content)
 
