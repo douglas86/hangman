@@ -13,6 +13,8 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 - The reason for creating that branch was to keep well maintainable and easy to manage code in my main branch
 - With GitHub Pages not supporting type="module" it means that everything has to reside in one file
 
+![web-image.png](assets/images/readme/introduction/web-image.png)
+
 [Live site](https://douglas86.github.io/hangman/)
 ---
 
