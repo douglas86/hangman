@@ -17,7 +17,7 @@ export const howToPlay = () => {
                 <li>For every correct answer you get 2 points</li>
                 <li>For every incorrect answer it subtracts 1 point from your score</li>
                 <li>You get a total of 10 tries to guess the word</li>
-                <li>You win the game by getting 20 points</li>
+                <li>You win the game by getting 100 points</li>
                 <li>You lose the game by getting tries to 0</li>
            </ul>
            `;
