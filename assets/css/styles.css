@@ -82,7 +82,7 @@ h1 {
 
 /*hidden data*/
 #hidden-data {
-  visibility: hidden;
+  display: none;
 }
 
 /*hangman image and keydown letter*/
