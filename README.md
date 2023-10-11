@@ -91,7 +91,7 @@ their products are good and I enjoy using them.
 | if tries hits 0 the overlay will display saying game loss                                      | PASS   |
 | if score greater than or equal to 100 overlay will display saying congratulations              | PASS   |
 | then "?" mark next to header will say how to play                                              | PASS   |
-| as soon as the correct array is filled in, it shows a new word to quess                        | PASS   |
+| as soon as the correct array is filled in, it shows a new word to be guessed                   | PASS   |
 | all external links open in a new tab                                                           | PASS   |
 | keyboard buttons change when clicked or keydown event is triggered                             | PASS   |
 | website layout is responsive                                                                   | PASS   |
@@ -128,8 +128,10 @@ which then creates a longer array with to many spaces or letters.
 
 - How did I get it to work?
 
-When the correct key is pressed, that key is then placed in the array replacing the spaces that were created on a page 
-load, while doing that I also replace the previous array passed into the function with the newly created array.
+When the correct key is pressed, 
+that key is then placed in the array replacing the spaces that were created on a page 
+load, while doing that I also replace the previous array passed into the function 
+with the newly created array.
 
 This is how it looks on a page load, with random word from an object:
 
