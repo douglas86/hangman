@@ -1,22 +1,53 @@
 import { checkLetterUsed } from "../utils/checkLetterUsed.js";
+import { splitStringToArray } from "../utils/splitStringToArray.js";
+import { createArray } from "../utils/createArray.js";
 
 /**
  * creates the keyboard buttons on the screen
  * @param objectAttributes - passing an object of all the attributes that I am wanting to create
- * @param splitNameToArray - this is only passed in to update the other functions that it needs to run
  */
-export const button = (objectAttributes, splitNameToArray) => {
+export const button = (objectAttributes) => {
   let div = document.getElementsByClassName("keyboard-layout")[0];
   let btn = document.createElement("button");
+  let guess = document.getElementsByClassName("guessed-word")[0];
+  let hidden = document.getElementById("hidden-data");
+
   let clickedButtons = document.getElementsByClassName(
     "keyboard-buttons-clicked",
   );
+  let keys = document.getElementsByClassName("keyboard-buttons");
   let keysClicked = [];
+
+  const config = { childList: true };
+
+  const callback = (mutationList) => {
+    for (const mutation of mutationList)
+      if (mutation.type === "childList") {
+        guess.innerHTML = "";
+        createArray(splitStringToArray());
+        // when word changes reset all buttons back to the original class
+        Object.values(keys).map((item) => {
+          item.setAttribute("class", "keyboard-buttons");
+        });
+        keysClicked = [];
+      }
+  };
+
+  const observer = new MutationObserver(callback);
+
+  // this event listener is to listen for the word that you need to guess to change
+  //   when it changes it resets the keysClicked array
+  // this still needs to be broken into its own file - haven't gotten it right yet
+  observer.observe(hidden, config);
 
   Object.entries(objectAttributes).map(([key, value]) => {
     key === "text"
       ? (btn.innerText = `${value}`) &&
         btn.addEventListener("click", function () {
+          if (clickedButtons.length === 0) {
+            keysClicked.length = 0;
+          }
+
           // sets the button attribute to change class so that different styling can be applied
           btn.setAttribute("class", "keyboard-buttons-clicked");
 
@@ -24,7 +55,7 @@ export const button = (objectAttributes, splitNameToArray) => {
           // if a letter has not been pressed update scores
           // if a letter has been pressed do nothing
           keysClicked.indexOf(value.toLowerCase()) === -1 &&
-            checkLetterUsed(splitNameToArray, value);
+            checkLetterUsed(splitStringToArray(), value);
 
           // pushes all buttons with the class of keyboard-buttons-clicked to array
           for (let i = 0; i < clickedButtons.length; i++) {
