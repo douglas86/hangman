@@ -1,18 +1,19 @@
 import { createArray } from "./utils/createArray.js";
-import { randomValue } from "./utils/randomValue.js";
 import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
 import { checkLetterUsed } from "./utils/checkLetterUsed.js";
 import { overlay } from "./components/overlay.js";
+import { randomValue } from "./utils/randomValue.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const { name } = randomValue(); // randomly select a name from the data array
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
   let sound = document.getElementsByClassName("sound")[0];
   let play = document.getElementsByClassName("play-sound")[0];
-  let splitNameToArray = name.split("");
+  let data = document.getElementById("hidden-data").innerText;
+  let splitNameToArray = data.split("");
   let keysPressed = []; // captures all the keys that were pressed
 
+  randomValue(); // creates the random value to be displayed
   createArray(splitNameToArray);
   qwertyKeyboard(splitNameToArray);
   overlay();
