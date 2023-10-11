@@ -8,12 +8,24 @@
   h1 {
     font-size: 300%;
   }
+  .question {
+    font-size: 2.3rem;
+    margin-top: -1.5rem;
+  }
 
   /*main*/
   main {
     display: flex;
     margin: 5%;
   }
+  /*overlay*/
+  #overlay {
+    left: 0;
+  }
+  .overlay-text {
+    font-size: 1.5rem;
+  }
+
   /*hangman image and keydown letter*/
   #hangman-image-letter {
     width: 40%;
@@ -99,8 +111,17 @@
   h1 {
     font-size: 1000%;
   }
+  .question {
+    font-size: 6rem;
+    margin-top: -2rem;
+    margin-right: 3rem;
+  }
 
   /*main*/
+  .overlay-text {
+    font-size: 5rem;
+  }
+
   /*hangman image and keydown letter*/
   .hangman-image > img {
     width: 40rem;
