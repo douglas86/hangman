@@ -6,14 +6,14 @@ import { randomValue } from "./utils/randomValue.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  randomValue(); // creates the random value to be displayed
 
   let sound = document.getElementsByClassName("sound")[0];
   let play = document.getElementsByClassName("play-sound")[0];
-  let data = document.getElementById("hidden-data").innerText;
-  let splitNameToArray = data.split("");
+  let data = document.getElementById("hidden-data");
+  let splitNameToArray = data.innerText.split("");
   let keysPressed = []; // captures all the keys that were pressed
 
-  randomValue(); // creates the random value to be displayed
   createArray(splitNameToArray);
   qwertyKeyboard(splitNameToArray);
   overlay();
@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // when a letter on keyboard used append to keysPressed array
       keysPressed.push(event.key.toLowerCase());
+
+      // !result[0].split("").includes("_") && randomValue();
 
       // when a letter is pressed on the keyboard, the class of the keyboard will change
       // to give different styling to keys

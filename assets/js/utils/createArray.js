@@ -1,5 +1,6 @@
 import { displayArray } from "../components/displayArray.js";
 import { overlay } from "../components/overlay.js";
+import { randomValue } from "./randomValue.js";
 
 /**
  * used to update the array on the board or create an array with all the spaces
@@ -28,6 +29,8 @@ export const createArray = (array, key = "none") => {
         Number(scoring.textContent) + 2 >= 100 &&
           !result[0].split("").includes("_") &&
           overlay("win");
+
+        !result[0].split("").includes("_") && randomValue();
       }
     });
   } else {
