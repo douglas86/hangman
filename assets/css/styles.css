@@ -67,7 +67,8 @@ h1 {
 .overlay-text p {
   margin: 5rem;
 }
-.overlay-button {
+.overlay-button,
+.sound {
   color: #33976f;
   font-weight: bold;
   background-color: #00ffff;
