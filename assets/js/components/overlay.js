@@ -1,5 +1,6 @@
 import { howToPlay } from "../utils/overlay/howToPlay.js";
 import { win } from "../utils/overlay/win.js";
+import { loss } from "../utils/overlay/loss.js";
 
 /**
  * this function it to handle the overlay passing in a type of either: win or loss, it will display how to play by default
@@ -10,7 +11,7 @@ export const overlay = (type) => {
     case "win":
       return win();
     case "loss":
-      return console.log("I loss");
+      return loss();
     default:
       return howToPlay();
   }

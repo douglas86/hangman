@@ -20,7 +20,7 @@ export const createArray = (array, key = "none") => {
         // if check true replace space with character in a letters array
         className[index].innerText = key.toUpperCase();
 
-        // object to see what values are in teh guess class
+        // object to see what values are in the guess class
         let result = Object.values(guess).map((item) => item.innerText);
 
         // checks to see if the score is greater than or equal to 20, and it doesn't include the "_" character
