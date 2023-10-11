@@ -1,4 +1,5 @@
 import { hangmanImage } from "./hangmanImage.js";
+import { overlay } from "./overlay.js";
 
 /**
  * decreases the score and tries variable
@@ -12,6 +13,8 @@ export const decreaseScore = () => {
   triesLeft.textContent = (Number(triesLeft.textContent) - 1).toString();
 
   hangmanImage(Number(triesLeft.innerText));
+
+  Number(triesLeft.innerText) === 0 && overlay("loss");
 
   audio.play();
 };
