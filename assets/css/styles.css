@@ -67,8 +67,7 @@ h1 {
 .overlay-text p {
   margin: 5rem;
 }
-.overlay-button,
-.sound {
+.overlay-button {
   color: #33976f;
   font-weight: bold;
   background-color: #00ffff;
@@ -78,6 +77,13 @@ h1 {
   height: 2rem;
   margin: 2rem;
   justify-content: center;
+}
+.sound {
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 /*hidden data*/

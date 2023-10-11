@@ -19,6 +19,7 @@ export const howToPlay = () => {
                 <li>You get a total of 10 tries to guess the word</li>
                 <li>You win the game by getting 100 points</li>
                 <li>You lose the game by getting tries to 0</li>
+                <li>Clicking the music button as a toggle turning sound off or on</li>
            </ul>
            `;
   });
