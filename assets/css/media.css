@@ -25,6 +25,12 @@
   .overlay-text {
     font-size: 1.5rem;
   }
+  .sound {
+    display: inline-block;
+    position: absolute;
+    z-index: 20;
+    margin-top: -2rem;
+  }
 
   /*hangman image and keydown letter*/
   #hangman-image-letter {
@@ -33,9 +39,6 @@
   .hangman-image {
     margin: 2%;
   }
-  /*.hangman-image > img {*/
-  /*  width: 12rem;*/
-  /*}*/
   .keydown-letter {
     font-size: 5rem;
     margin: -1rem;
@@ -120,6 +123,15 @@
   /*main*/
   .overlay-text {
     font-size: 5rem;
+  }
+
+  /*music toggle button*/
+  .sound {
+    font-size: 3rem;
+    width: 20rem;
+    height: 6rem;
+    margin-top: -8rem;
+    border-radius: 20px;
   }
 
   /*hangman image and keydown letter*/

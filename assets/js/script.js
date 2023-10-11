@@ -7,12 +7,23 @@ import { overlay } from "./components/overlay.js";
 document.addEventListener("DOMContentLoaded", function () {
   const { name } = randomValue(); // randomly select a name from the data array
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  let sound = document.getElementsByClassName("sound")[0];
+  let play = document.getElementsByClassName("play-sound")[0];
   let splitNameToArray = name.split("");
   let keysPressed = []; // captures all the keys that were pressed
 
   createArray(splitNameToArray);
   qwertyKeyboard(splitNameToArray);
   overlay();
+
+  // This event listener attaches to the music button
+  // This is used as a toggle to turn the music off and on
+  sound.addEventListener("click", function () {
+    play.innerText === "OFF"
+      ? (play.innerText = "ON")
+      : (play.innerText = "OFF");
+  });
 
   document.addEventListener("keydown", function (event) {
     let keys = document.getElementsByClassName("keyboard-buttons");
