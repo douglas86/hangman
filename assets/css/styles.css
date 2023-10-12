@@ -78,6 +78,8 @@ h1 {
   margin: 2rem;
   justify-content: center;
 }
+
+/*sound toggle*/
 .sound {
   color: black;
   background-color: #33976f;
