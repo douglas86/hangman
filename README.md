@@ -291,7 +291,7 @@ This is how it looks when I solved the bug?
 
 ![negative-tries-3.png](assets/images/readme/bugs/negative-tries-3.png)
 
-### [bug for duplicate keys when crossing from keyboard to onscreen qwerty keyboard]
+### [bug for duplicate keys when crossing from keyboard to onscreen qwerty keyboard](#table-of-content)
 
 - What is it suppose to do?
 
@@ -311,8 +311,8 @@ This bug was not solved. Will have to find time at a later date.
 
 | What is being tested?                                                                         | Result |
 |-----------------------------------------------------------------------------------------------|--------|
-| Music is not playing when button are clicked                                                  | PASS   |
-| Music plays when sound button is toggled                                                      | PASS   |
+| When sound is toggle to off, sound does not play                                              | PASS   |
+| When sound is toggle to on, the sound play on correct or incorrect letters                    | PASS   |
 | When qwerty keyboard button is clicked letter displays, saying the character that was pressed | PASS   |
 | When keyboard letter is pressed the letter is displayed                                       | PASS   |
 | You can only press the keyboard character once                                                | PASS   |
@@ -324,7 +324,7 @@ This bug was not solved. Will have to find time at a later date.
 | once tries hits 0 the hangman image is showing the full picture                               | PASS   |
 | hangman image changes on tries change                                                         | PASS   |
 | if tries hits 0 the overlay will display saying game loss                                     | PASS   |
-| if score greater than or equal to 100 overlay will display saying congratulations             | PASS   |
+| if score greater than or equal to 20 overlay will display saying congratulations              | PASS   |
 | clicking "?" mark next to header will say show how to play the game                           | PASS   |
 | as soon as the correct array is filled in, it shows a new word to be guessed                  | PASS   |
 | all external links open in a new tab                                                          | PASS   |
