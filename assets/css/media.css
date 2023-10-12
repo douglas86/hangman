@@ -18,6 +18,7 @@
     display: flex;
     margin: 5%;
   }
+
   /*overlay*/
   #overlay {
     left: 0;
@@ -43,6 +44,7 @@
     font-size: 5rem;
     margin: -1rem;
   }
+
   /*score, triesLeft and guessed word*/
   #scoring-tries-characters-keyboard {
     width: 60%;
@@ -58,6 +60,7 @@
   .spacing {
     margin: 0 0.1rem;
   }
+
   /*keyboard*/
   .keyboard-layout {
     margin-top: 3rem;
@@ -88,6 +91,7 @@
   .keydown-letter {
     font-size: 7rem;
   }
+
   /*score, triesLeft and guessed word*/
   #score {
     font-size: 1.5rem;
@@ -102,6 +106,7 @@
   #scoring-tries-characters-keyboard {
     width: 70%;
   }
+
   /*keyboard*/
   .keyboard-buttons,
   .keyboard-buttons-clicked {
@@ -152,6 +157,7 @@
   .keydown-letter {
     font-size: 15rem;
   }
+
   /*score, triesLeft and guessed word*/
   #score {
     font-size: 4rem;

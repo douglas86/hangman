@@ -108,12 +108,12 @@ h1 {
   margin: auto;
   box-shadow: 10px 10px lightblue;
 }
-
 #keydown-letter {
   position: absolute;
   font-size: 4rem;
   margin: 1rem;
 }
+
 /*score, triesLeft and guessed word*/
 #score {
   display: flex;
