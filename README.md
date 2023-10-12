@@ -64,37 +64,67 @@ Acceptance criteria
 
 ![heading.png](assets/images/readme/features/heading.png)
 
+- Small image on the Left-Hand side—displaying a ship in the ocean
+- Title of the game in the center
+- Question mark for How to Play once clicked on
+
 ### [Toggle to turn sound on and off](#table-of-content)
 
 ![sound.png](assets/images/readme/features/sound.png)
+
+- Button toggle to turn sound on and off
+- When toggle is switched on, sound will play on correct or incorrect answers
 
 ### [Hangman image](#table-of-content)
 
 ![hangman-image.png](assets/images/readme/features/hangman-image.png)
 
 - images change based on tries left
+- When tries hits 0, the full hangman image is drawn
 
 ### [Scores and Tries](#table-of-content)
 
 ![score-tries.png](assets/images/readme/features/score-tries.png)
 
+- The score changes based-on-letter pressed
+- When the letter is correct score add 2
+- When the letter is incorrect, the score subtracts by 1
+- For every correct answer, the score subtracts 1 with the try variable
+
 ### [Word that needs to be guessed](#table-of-content)
 
 ![guessing-word.png](assets/images/readme/features/guessing-word.png)
+
+- The word to be guessed
+- The word is randomly selected from an array with objects
+- The object is there to allow for future expansion
 
 ### [onscreen qwerty keyboard](#table-of-content)
 
 ![qwerty-keyboard.png](assets/images/readme/features/qwerty-keyboard.png)
 
+- Qwerty keyboard layout
+- They are all button clicks, for if a mechanical keyboard is not present
+- Letters of the keyboard changes once clicked on
+
 ### [Footer](#footer)
 
 ![footer.png](assets/images/readme/features/footer.png)
+
+- All icons are clickable links taking you to my home page of the different applications
+
+### [Main Content](#table-of-content)
+
+![main-content.png](assets/images/readme/features/main-content.png)
+
+- Main display of all my content
+- Qwerty keyboard, spacing for the letters go and the image with toggle sound button above
 
 ### [Features that I want to add at a later stage](#table-of-content)
 
 - I am wanting to add a category section
 - I have only added 10 items of data with the category of countries
-- To allow for future improvement
+- This is here to allow for future expansion
 
 ---
 
@@ -156,8 +186,8 @@ their products are good and I enjoy using them.
 | as soon as the correct array is filled in, it shows a new word to be guessed                  | PASS   |
 | all external links open in a new tab                                                          | PASS   |
 | keyboard buttons change when clicked or keydown event is triggered                            | PASS   |
-| website layout is responsive                                                                  | PASS   |
-                                                                                            |                                                                                               |
+| website layout is responsive                                                                  | PASS   ||                                                                                               |
+
 HTML validator
 
 ![html-validator.png](assets/images/readme/testing/html-validator.png)
