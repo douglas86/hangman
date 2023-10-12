@@ -344,7 +344,7 @@ This is how it looks when I solved the bug?
 - Example of how i did the [timer](https://daily-dev-tips.com/posts/vanilla-javascript-timer/)
 - Example of [keyboard](https://codepen.io/dcode-software/pen/KYYKxP?editors=0010)
 
-- [Mentor](https://www.linkedin.com/in/lukebuchanan67/)
+- [Luke Buchanan - Mentor](https://www.linkedin.com/in/lukebuchanan67/)
 - [Code Institute](https://codeinstitute.net/)
 
 ---
