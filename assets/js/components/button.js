@@ -1,6 +1,6 @@
-import { checkLetterUsed } from "../utils/checkLetterUsed.js";
-import { splitStringToArray } from "../utils/splitStringToArray.js";
-import { createArray } from "../utils/createArray.js";
+import { checkLetterUsed } from "../utils/check-letter-used.js";
+import { splitStringToArray } from "../utils/split-string-to-array.js";
+import { createArray } from "../utils/create-array.js";
 
 /**
  * creates the keyboard buttons on the screen

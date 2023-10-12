@@ -1,4 +1,4 @@
-import { hangmanImage } from "./hangmanImage.js";
+import { hangmanImage } from "./hangman-image.js";
 import { overlay } from "./overlay.js";
 import { sound } from "../utils/sound.js";
 

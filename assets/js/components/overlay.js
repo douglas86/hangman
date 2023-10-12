@@ -1,4 +1,4 @@
-import { howToPlay } from "../utils/overlay/howToPlay.js";
+import { howToPlay } from "../utils/overlay/how-to-play.js";
 import { win } from "../utils/overlay/win.js";
 import { loss } from "../utils/overlay/loss.js";
 

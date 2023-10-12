@@ -1,6 +1,6 @@
-import { displayLetter } from "../components/displayLetter.js";
-import { findLetterInArray } from "./findLetterInArray.js";
-import { createArray } from "./createArray.js";
+import { displayLetter } from "../components/display-letter.js";
+import { findLetterInArray } from "./find-letter-in-array.js";
+import { createArray } from "./create-array.js";
 
 /**
  * displays letter to board finds and updates score and update array displayed on screen

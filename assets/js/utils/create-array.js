@@ -1,6 +1,6 @@
-import { displayArray } from "../components/displayArray.js";
+import { displayArray } from "../components/display-array.js";
 import { overlay } from "../components/overlay.js";
-import { randomValue } from "./randomValue.js";
+import { randomValue } from "./random-value.js";
 
 /**
  * used to update the array on the board or create an array with all the spaces
