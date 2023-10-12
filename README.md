@@ -4,7 +4,11 @@ This is the second Milestone Project with Code Institute.
 
 This Project will just have HTML, CSS, and vanilla JavaScript.
 
-This is a simple Hangman Game were you guess what letters come into the spaces.
+- This is a simple attempt of the popular Hangman game.
+- Were players guessing a letter and the word is uncovered as you go along?
+- When players enter the incorrect letter, a piece of the hangman is drawn, keeping an attempt to have as little as 10 
+tries
+- Players are able to win this game by scoring 20 points, but only if the entire word is correct
 
 ![web-image.png](assets/images/readme/introduction/web-image.png)
 
