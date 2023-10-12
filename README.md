@@ -226,6 +226,14 @@ Lighthouse score on Desktop
 
 ![wireframe-desktop.png](assets/images/readme/planning/wireframe-desktop.png)
 
+#### JavaScript Testing
+
+All JS files were tested on [jshint](https://jshint.com/)
+
+You can find all individual testings [here](test.md)
+
+There was only warning in jshint testing
+
 ---
 
 ## [Bugs and Problems](#table-of-content)
