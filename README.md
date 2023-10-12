@@ -21,6 +21,14 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 # Table of Content
 
 - [Introduction](#introduction)
+- [Features](#features)
+  - [Heading](#heading)
+  - [Toggle to turn sound on and off](#toggle-to-turn-sound-on-and-off)
+  - [Hangman image](#hangman-image)
+  - [Score and Tries](#scores-and-tries)
+  - [Word that needs to be guessed](#word-that-needs-to-be-guessed)
+  - [onscreen qwerty keyboard](#onscreen-qwerty-keyboard)
+  - [footer](#footer)
 - [Planning](#planning)
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
@@ -35,6 +43,46 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
   - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
   - [Image not displayed on negative tries variable](#image-not-displayed-on-negative-tries-variable)
+
+---
+
+## [Features](#table-of-content)
+
+### [Heading](#table-of-content)
+
+![heading.png](assets/images/readme/features/heading.png)
+
+### [Toggle to turn sound on and off](#table-of-content)
+
+![sound.png](assets/images/readme/features/sound.png)
+
+### [Hangman image](#table-of-content)
+
+![hangman-image.png](assets/images/readme/features/hangman-image.png)
+
+- images change based on tries left
+
+### [Scores and Tries](#table-of-content)
+
+![score-tries.png](assets/images/readme/features/score-tries.png)
+
+### [Word that needs to be guessed](#table-of-content)
+
+![guessing-word.png](assets/images/readme/features/guessing-word.png)
+
+### [onscreen qwerty keyboard](#table-of-content)
+
+![qwerty-keyboard.png](assets/images/readme/features/qwerty-keyboard.png)
+
+### [Footer](#footer)
+
+![footer.png](assets/images/readme/features/footer.png)
+
+### [Features that I want to add at a later stage](#table-of-content)
+
+- I am wanting to add a category section
+- I have only added 10 items of data with the category of countries
+- To allow for future improvement
 
 ---
 
