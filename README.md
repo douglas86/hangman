@@ -140,6 +140,10 @@ Acceptance criteria
 
 - figma—designing the wire frame diagram
 - GitHub and Jetbrains Spaces—version control system
+- Intellij - my coding editor
+- Slack—used for communication with mentor
+- Google Chrome - web browser
+- GitHub pages for going live
 
 Comparison of using GitHub and Jetbrains Spaces.
 
