@@ -10,6 +10,21 @@ This Project will just have HTML, CSS, and vanilla JavaScript.
 tries
 - Players are able to win this game by scoring 20 points, but only if the entire word is correct
 
+### User Story
+
+- As a player
+- I want to play a game of Hangman
+- This is an attempt to test my vocabulary and word skills while having fun with it
+
+Acceptance criteria
+
+1. When I open the game for the first time, I should be presented with a screen to begin playing the game
+2. Upon starting the game, I am presented with blank spaces, where the letters would go
+3. I have exactly 10 chances to guess the correct word
+4. either using the keyboard on the onscreen qwerty keyboard
+5. For every incorrect answer a piece of the hangman is drawn
+6. You win the game by getting your score to 20 points, but only once the word has been filled in
+
 ![web-image.png](assets/images/readme/introduction/web-image.png)
 
 [Live site](https://douglas86.github.io/hangman/)
