@@ -161,7 +161,7 @@ footer {
 footer > ul {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: auto;
   padding: 0.2rem;
 }
@@ -169,4 +169,7 @@ footer a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
+}
+footer i {
+  margin: 0.2rem;
 }
