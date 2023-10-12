@@ -6,12 +6,7 @@ This Project will just have HTML, CSS, and vanilla JavaScript.
 
 This is a simple Hangman Game were you guess what letters come into the spaces.
 
-### When deploying site live
-
-- GitHub Pages doesn't support the type="module" attribute on the script tag in my index.html file
-- In order for me to solve that problem, I created a new branch called github-pages
-- The reason for creating that branch was to keep well maintainable and easy to manage code in my main branch
-- With GitHub Pages not supporting type="module" it means that everything has to reside in one file
+![web-image.png](assets/images/readme/introduction/web-image.png)
 
 [Live site](https://douglas86.github.io/hangman/)
 ---
@@ -19,11 +14,20 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
 # Table of Content
 
 - [Introduction](#introduction)
+- [Features](#features)
+  - [Heading](#heading)
+  - [Toggle to turn sound on and off](#toggle-to-turn-sound-on-and-off)
+  - [Hangman image](#hangman-image)
+  - [Score and Tries](#scores-and-tries)
+  - [Word that needs to be guessed](#word-that-needs-to-be-guessed)
+  - [onscreen qwerty keyboard](#onscreen-qwerty-keyboard)
+  - [footer](#footer)
 - [Planning](#planning)
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
     - [GitHub: Pros and Cons](#github-pros-and-cons)
     - [Jetbrains Spaces: Pros and Cons](#jetbrains-spaces-pros-and-cons)
+  - [Testing](#testing)
   - [Wire framing](#wire-framing)
     - [Mobile Devices](#mobile-device)
     - [Tablet Devices](#tablet-device)
@@ -32,6 +36,46 @@ This is a simple Hangman Game were you guess what letters come into the spaces.
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
   - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
   - [Image not displayed on negative tries variable](#image-not-displayed-on-negative-tries-variable)
+
+---
+
+## [Features](#table-of-content)
+
+### [Heading](#table-of-content)
+
+![heading.png](assets/images/readme/features/heading.png)
+
+### [Toggle to turn sound on and off](#table-of-content)
+
+![sound.png](assets/images/readme/features/sound.png)
+
+### [Hangman image](#table-of-content)
+
+![hangman-image.png](assets/images/readme/features/hangman-image.png)
+
+- images change based on tries left
+
+### [Scores and Tries](#table-of-content)
+
+![score-tries.png](assets/images/readme/features/score-tries.png)
+
+### [Word that needs to be guessed](#table-of-content)
+
+![guessing-word.png](assets/images/readme/features/guessing-word.png)
+
+### [onscreen qwerty keyboard](#table-of-content)
+
+![qwerty-keyboard.png](assets/images/readme/features/qwerty-keyboard.png)
+
+### [Footer](#footer)
+
+![footer.png](assets/images/readme/features/footer.png)
+
+### [Features that I want to add at a later stage](#table-of-content)
+
+- I am wanting to add a category section
+- I have only added 10 items of data with the category of countries
+- To allow for future improvement
 
 ---
 
@@ -71,6 +115,50 @@ their products are good and I enjoy using them.
 | Integrates well with Jetbrains products                | Can only create private repositories          |
 | Easy to organise repositories into projects            |                                               |
 
+### [Testing](#table-of-content)
+
+| What is being tested?                                                                         | Result |
+|-----------------------------------------------------------------------------------------------|--------|
+| Music is not playing when button are clicked                                                  | PASS   |
+| Music plays when sound button is toggled                                                      | PASS   |
+| When qwerty keyboard button is clicked letter displays, saying the character that was pressed | PASS   |
+| When keyboard letter is pressed the letter is displayed                                       | PASS   |
+| You can only press the keyboard character once                                                | PASS   |
+| You can only click a specific button on qwerty keyboard once                                  | PASS   |
+| If you click a letter on keyboard then switch to qwerty keyboard, that letter registers again | FAIL   |
+| scoring adds by 2 for every correct character                                                 | PASS   |
+| scoring subtracts by 1 for every incorrect character                                          | PASS   |
+| tries subtracts by 1 for every incorrect character                                            | PASS   |
+| once tries hits 0 the hangman image is showing the full picture                               | PASS   |
+| hangman image changes on tries change                                                         | PASS   |
+| if tries hits 0 the overlay will display saying game loss                                     | PASS   |
+| if score greater than or equal to 100 overlay will display saying congratulations             | PASS   |
+| clicking "?" mark next to header will say show how to play the game                           | PASS   |
+| as soon as the correct array is filled in, it shows a new word to be guessed                  | PASS   |
+| all external links open in a new tab                                                          | PASS   |
+| keyboard buttons change when clicked or keydown event is triggered                            | PASS   |
+| website layout is responsive                                                                  | PASS   |
+                                                                                            |                                                                                               |
+HTML validator
+
+![html-validator.png](assets/images/readme/testing/html-validator.png)
+
+- There were only info and warning errors
+- 5 warnings
+- 10 info
+
+CSS validator
+
+![css-validator.png](assets/images/readme/testing/css-validator.png)
+
+Lighthouse score on mobile
+
+![lighthouse-testing-mobile.png](assets/images/readme/testing/lighthouse-testing-mobile.png)
+
+Lighthouse score on Desktop
+
+![lighthouse-testing-desktop.png](assets/images/readme/testing/lighthouse-testing-desktop.png)
+
 ### [Wire framing](#table-of-content)
 
 #### [Mobile Device](#table-of-content)
@@ -102,8 +190,10 @@ which then creates a longer array with to many spaces or letters.
 
 - How did I get it to work?
 
-When the correct key is pressed, that key is then placed in the array replacing the spaces that were created on a page 
-load, while doing that I also replace the previous array passed into the function with the newly created array.
+When the correct key is pressed, 
+that key is then placed in the array replacing the spaces that were created on a page 
+load, while doing that I also replace the previous array passed into the function 
+with the newly created array.
 
 This is how it looks on a page load, with random word from an object:
 
@@ -166,50 +256,3 @@ This is how it looks when I solved the bug?
 ![negative-tries-3.png](assets/images/readme/bugs/negative-tries-3.png)
 
 ---
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere.
-If you are using Gitpod,
-then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.
-We have preinstalled all the tools you need to get started.
-It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere, you have superuser security privileges by default.
-Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku tool belt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works.
-This API key is unique and private to you, so do not share it.
-If you accidentally make it public, then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!

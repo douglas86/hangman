@@ -13,6 +13,7 @@ export const qwertyKeyboard = () => {
     objectAttributes = {
       type: "button",
       class: "keyboard-buttons",
+      "aria-label": items.toUpperCase(),
       text: items.toUpperCase(),
     };
 
