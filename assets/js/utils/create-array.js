@@ -1,6 +1,6 @@
-import { displayArray } from "../components/displayArray.js";
+import { displayArray } from "../components/display-array.js";
 import { overlay } from "../components/overlay.js";
-import { randomValue } from "./randomValue.js";
+import { randomValue } from "./random-value.js";
 
 /**
  * used to update the array on the board or create an array with all the spaces
@@ -26,7 +26,7 @@ export const createArray = (array, key = "none") => {
 
         // checks to see if the score is greater than or equal to 20, and it doesn't include the "_" character
         // if true shows the overlay win window
-        Number(scoring.textContent) + 2 >= 100 &&
+        Number(scoring.textContent) + 2 >= 20 &&
           !result[0].split("").includes("_") &&
           overlay("win");
 

@@ -1,9 +1,9 @@
-import { createArray } from "./utils/createArray.js";
-import { qwertyKeyboard } from "./components/qwertyKeyboard.js";
-import { checkLetterUsed } from "./utils/checkLetterUsed.js";
+import { createArray } from "./utils/create-array.js";
+import { qwertyKeyboard } from "./components/qwerty-keyboard.js";
+import { checkLetterUsed } from "./utils/check-letter-used.js";
 import { overlay } from "./components/overlay.js";
-import { randomValue } from "./utils/randomValue.js";
-import { splitStringToArray } from "./utils/splitStringToArray.js";
+import { randomValue } from "./utils/random-value.js";
+import { splitStringToArray } from "./utils/split-string-to-array.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Hangman game" />
-    <meta name="keywords" content="hangman,scoring" />
+    <meta name="keywords" content="hangman" />
 
     <!--Favicon icon-->
     <link
@@ -30,29 +30,36 @@
   </head>
   <body>
     <header>
+      <!--image next to game heading-->
       <img
         id="heading-image"
         src="assets/images/homepage/pirate-ship-in-caribbean.jpeg"
         alt="pirates ship image"
       />
+
+      <!--game heading-->
       <h1>Hangman</h1>
 
+      <!--question mark for how to play the game-->
       <button class="question" aria-label="how-to-play">
         <i class="fa-solid fa-question"></i>
       </button>
     </header>
 
     <main>
+      <!--overlay for win, loss and how to play?-->
       <section id="overlay">
         <div class="overlay-text"></div>
       </section>
 
+      <!--toggle btn for sound-->
       <section id="music">
         <button class="sound">
-          Music: <span class="play-sound">OFF</span>
+          Sound: <span class="play-sound">OFF</span>
         </button>
       </section>
 
+      <!--hidden data from public view-->
       <section id="hidden-data"></section>
 
       <section id="hangman-image-letter">
@@ -86,7 +93,10 @@
     <footer>
       <ul>
         <li>
-          <a href="https://www.facebook.com/douglas.maxton" target="_blank"
+          <a
+            href="https://www.facebook.com/douglas.maxton"
+            target="_blank"
+            aria-label="facebook icon"
             ><i class="fa-brands fa-facebook"></i
           ></a>
         </li>
@@ -94,11 +104,15 @@
           <a
             href="https://www.linkedin.com/in/douglas-maxton-58134b170"
             target="_blank"
+            aria-label="linkedin icon"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </li>
         <li>
-          <a href="https://github.com/douglas86" target="_blank"
+          <a
+            href="https://github.com/douglas86"
+            target="_blank"
+            aria-label="github page icon"
             ><i class="fa-brands fa-github"></i
           ></a>
         </li>

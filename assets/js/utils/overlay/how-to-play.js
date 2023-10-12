@@ -14,12 +14,12 @@ export const howToPlay = () => {
                 <li>A letter will display showing what key you pressed at the top left of the picture on the board</li>
                 <li>There is a button to turn sound on and off</li>
                 <li>If the sound is on, there will be different sounds depending on if your answer is correct or not</li>
-                <li>For every correct answer you get 2 points</li>
-                <li>For every incorrect answer it subtracts 1 point from your score</li>
+                <li>points: add 2 points per correct and subtract 1 point per incorrect answers</li>
                 <li>You get a total of 10 tries to guess the word</li>
-                <li>You win the game by getting 100 points</li>
-                <li>You lose the game by getting tries to 0</li>
-                <li>Clicking the music button as a toggle turning sound off or on</li>
+                <li>The Game is won by getting 20 points, and lost when tries hit 0</li>
+                <button class="overlay-button" onclick="function overlayBtn() {
+                    id.style.display = 'none'
+                }">Close</button>
            </ul>
            `;
   });

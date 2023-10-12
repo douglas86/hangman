@@ -1,5 +1,5 @@
-import { increaseScore } from "../components/increaseScore.js";
-import { decreaseScore } from "../components/decreaseScore.js";
+import { increaseScore } from "../components/increase-score.js";
+import { decreaseScore } from "../components/decrease-score.js";
 
 /**
  * finds if a letter is in the array
