@@ -26,7 +26,7 @@ export const createArray = (array, key = "none") => {
 
         // checks to see if the score is greater than or equal to 20, and it doesn't include the "_" character
         // if true shows the overlay win window
-        Number(scoring.textContent) + 2 >= 100 &&
+        Number(scoring.textContent) + 2 >= 20 &&
           !result[0].split("").includes("_") &&
           overlay("win");
 
