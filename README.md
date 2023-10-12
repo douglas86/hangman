@@ -98,6 +98,26 @@ their products are good and I enjoy using them.
 | keyboard buttons change when clicked or keydown event is triggered                             | PASS   |
 | website layout is responsive                                                                   | PASS   |
 | code not written by me, has a comment above it                                                 | PASS   |
+                                                                                            |                                                                                                |
+HTML validator
+
+![html-validator.png](assets/images/readme/testing/html-validator.png)
+
+- There were only info and warning errors
+- 5 warnings
+- 10 info
+
+CSS validator
+
+![css-validator.png](assets/images/readme/testing/css-validator.png)
+
+Lighthouse score on mobile
+
+![lighthouse-testing-mobile.png](assets/images/readme/testing/lighthouse-testing-mobile.png)
+
+Lighthouse score on Desktop
+
+![lighthouse-testing-desktop.png](assets/images/readme/testing/lighthouse-testing-desktop.png)
 
 ### [Wire framing](#table-of-content)
 
