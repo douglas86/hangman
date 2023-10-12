@@ -136,13 +136,7 @@ their products are good and I enjoy using them.
 
 ![wireframe-desktop.png](assets/images/readme/planning/wireframe-desktop.png)
 
-#### JavaScript Testing
 
-All JS files were tested on [jshint](https://jshint.com/)
-
-You can find all individual testings [here](test.md)
-
-There was only warning in jshint testing
 
 ---
 
@@ -356,6 +350,14 @@ Lighthouse score on mobile
 Lighthouse score on Desktop
 
 ![lighthouse-testing-desktop.png](assets/images/readme/testing/lighthouse-testing-desktop.png)
+
+#### JavaScript Testing
+
+All JS files were tested on [jshint](https://jshint.com/)
+
+You can find all individual testings [here](test.md)
+
+There was only warning in jshint testing
 
 ---
 
