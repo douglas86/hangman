@@ -5,6 +5,9 @@ import { overlay } from "./components/overlay.js";
 import { randomValue } from "./utils/random-value.js";
 import { splitStringToArray } from "./utils/split-string-to-array.js";
 
+/**
+ * Main entry point into the whole program
+ */
 document.addEventListener("DOMContentLoaded", function () {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
   randomValue(); // creates the random value to be displayed

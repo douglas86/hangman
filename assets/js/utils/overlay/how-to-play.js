@@ -1,3 +1,6 @@
+/**
+ * this is an overlay to give a description on how the game is played
+ */
 export const howToPlay = () => {
   let classes = document.getElementsByClassName("question")[0];
   let id = document.getElementById("overlay");
