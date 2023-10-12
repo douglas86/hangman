@@ -33,6 +33,7 @@ Acceptance criteria
 # Table of Content
 
 - [Introduction](#introduction)
+- [How do i run this project](#how-do-i-run-this-project)
 - [Features](#features)
   - [Heading](#heading)
   - [Toggle to turn sound on and off](#toggle-to-turn-sound-on-and-off)
@@ -55,6 +56,26 @@ Acceptance criteria
   - [Array appending instead of replacing](#array-appending-instead-of-replacing)
   - [Hangman Images not Changing on tries variable change](#hangman-images-not-changing-on-tries-variable-change)
   - [Image not displayed on negative tries variable](#image-not-displayed-on-negative-tries-variable)
+- [Credits](#credits)
+
+---
+
+## [How do I run this project?](#table-of-content)
+
+### Locally
+
+- You can install this project using the following commands one or the other
+- git clone git@github.com:douglas86/hangman.git - if using ssh
+- git clone https://github.com/douglas86/hangman.git - if using https
+
+### Going live on GitHub Pages
+
+- To get this up and running on GitHub pages
+- go to the setting tab of your repository
+- on the left there go to the one that says pages
+- under the branch section, select what branch you want to live
+- I selected the main branch
+- go to the actions tab and watch it being built and deployed
 
 ---
 
@@ -315,5 +336,9 @@ This is with the error when tries hits negative?
 This is how it looks when I solved the bug?
 
 ![negative-tries-3.png](assets/images/readme/bugs/negative-tries-3.png)
+
+---
+
+## [Credits](#table-of-content)
 
 ---
