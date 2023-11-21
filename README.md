@@ -33,7 +33,7 @@ Acceptance criteria
 # Table of Content
 
 - [Introduction](#introduction)
-- [How do i run this project?](#how-do-i-run-this-project)
+- [How do I run this project?](#how-do-i-run-this-project)
 - [Planning](#planning)
   - [Colour Pallet](#colour-pallet)
   - [Technology Used](#technology-used)
@@ -200,7 +200,7 @@ their products are good and I enjoy using them.
 ![main-content.png](assets/images/readme/features/main-content.png)
 
 - Main display of all my content
-- Qwerty keyboard, spacing for the letters, image on right for hangman and a toggle just above for turning sound off 
+- Qwerty keyboard, spacing for the letters, image on the right for hangman and a toggle just above for turning sound off 
   and on
 
 ### [Features that I want to add at a later stage](#table-of-content)
@@ -363,7 +363,7 @@ There was only warning in jshint testing
 
 ## [Credits](#table-of-content)
 
-- Example of how i did the [timer](https://daily-dev-tips.com/posts/vanilla-javascript-timer/)
+- Example of how I did the [timer](https://daily-dev-tips.com/posts/vanilla-javascript-timer/)
 - Example of [keyboard](https://codepen.io/dcode-software/pen/KYYKxP?editors=0010)
 
 - [Luke Buchanan - Mentor](https://www.linkedin.com/in/lukebuchanan67/)

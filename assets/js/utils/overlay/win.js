@@ -16,5 +16,6 @@ export const win = () => {
 
   id.addEventListener("click", function () {
     id.style.display = "none";
+    window.location.reload();
   });
 };
