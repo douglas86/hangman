@@ -6,8 +6,6 @@ export const loss = () => {
   let text = document.getElementsByClassName("overlay-text")[0];
   let hidden = document.getElementById("hidden-data").innerText;
 
-  console.log("hidden", hidden);
-
   id.style.display = "block";
 
   text.innerHTML = `
