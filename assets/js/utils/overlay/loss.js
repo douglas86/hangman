@@ -18,5 +18,6 @@ export const loss = () => {
 
   id.addEventListener("click", function () {
     id.style.display = "none";
+    window.location.reload();
   });
 };
