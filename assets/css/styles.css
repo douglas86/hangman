@@ -94,6 +94,9 @@ h1 {
 #hidden-data {
   display: none;
 }
+.hidden {
+  display: none;
+}
 
 /*hangman image and keydown letter*/
 #hangman-image-letter {
