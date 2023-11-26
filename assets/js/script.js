@@ -55,21 +55,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("keydown", function (event) {
     let keys = document.getElementsByClassName("keyboard-buttons");
+    let flag = document.getElementsByClassName("hidden")[0].innerText;
+
     if (alphabet.includes(event.key.toLowerCase())) {
-      // check to see if a letter has already been pressed
-      // if a letter has not been pressed update scores
-      // if a letter has been pressed do nothing
-      keysPressed.indexOf(event.key.toLowerCase()) === -1 &&
-        checkLetterUsed(splitStringToArray(), event.key);
+      if (flag === "True") {
+        // check to see if a letter has already been pressed
+        // if a letter has not been pressed update scores
+        // if a letter has been pressed do nothing
+        keysPressed.indexOf(event.key.toLowerCase()) === -1 &&
+          checkLetterUsed(splitStringToArray(), event.key);
 
-      // when a letter on keyboard used append to keysPressed array
-      keysPressed.push(event.key.toLowerCase());
+        // when a letter on keyboard used append to keysPressed array
+        keysPressed.push(event.key.toLowerCase());
 
-      // when a letter is pressed on the keyboard, the class of the keyboard will change
-      // to give different styling to keys
-      for (let i = 0; i < keys.length; i++) {
-        if (keys[i].innerText.toLowerCase() === event.key.toLowerCase()) {
-          keys[i].setAttribute("class", "keyboard-buttons-clicked");
+        // when a letter is pressed on the keyboard, the class of the keyboard will change
+        // to give different styling to keys
+        for (let i = 0; i < keys.length; i++) {
+          if (keys[i].innerText.toLowerCase() === event.key.toLowerCase()) {
+            keys[i].setAttribute("class", "keyboard-buttons-clicked");
+          }
         }
       }
     }
