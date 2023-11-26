@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
   createArray(splitStringToArray());
   qwertyKeyboard();
   overlay();
+  // clears the localStorage when page loads
+  localStorage.clear();
 
   // This event listener attaches to the music button
   // This is used as a toggle to turn the music off and on
