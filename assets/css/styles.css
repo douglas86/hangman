@@ -67,17 +67,6 @@ h1 {
 .overlay-text p {
   margin: 5rem;
 }
-.overlay-button {
-  color: #33976f;
-  font-weight: bold;
-  background-color: #00ffff;
-  border: 2px solid red;
-  border-radius: 5px;
-  width: 5rem;
-  height: 2rem;
-  margin: 2rem;
-  justify-content: center;
-}
 
 /*sound toggle*/
 .sound {
