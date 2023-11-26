@@ -17,7 +17,7 @@ export const loss = () => {
         <button class="overlay-button" onclick="window.location.reload()">Reset</button>
     `;
 
-  flag.innerHTML = `False`;
+  flag.innerHTML = "False";
 
   id.addEventListener("click", function () {
     id.style.display = "none";

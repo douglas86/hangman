@@ -5,6 +5,7 @@ export const howToPlay = () => {
   let classes = document.getElementsByClassName("question")[0];
   let id = document.getElementById("overlay");
   let text = document.getElementsByClassName("overlay-text")[0];
+  let flag = document.getElementsByClassName("hidden")[0];
 
   classes.addEventListener("click", function () {
     id.style.display = "block";
@@ -25,9 +26,12 @@ export const howToPlay = () => {
                 }">Close</button>
            </ul>
            `;
+
+    flag.innerHTML = "False";
   });
 
   id.addEventListener("click", function () {
     id.style.display = "none";
+    flag.innerHTML = "True";
   });
 };
