@@ -21,9 +21,6 @@ export const howToPlay = () => {
                 <li>points: add 2 points per correct and subtract 1 point per incorrect answers</li>
                 <li>You get a total of 10 tries to guess the word</li>
                 <li>The Game is won by getting 20 points, and lost when tries hit 0</li>
-                <button class="overlay-button" onclick="function overlayBtn() {
-                    id.style.display = 'none'
-                }">Close</button>
            </ul>
            `;
 
