@@ -137,11 +137,6 @@
   .overlay-text {
     font-size: 5rem;
   }
-  .overlay-button {
-    width: 15rem;
-    height: 8rem;
-    font-size: 3rem;
-  }
 
   /*sound toggle*/
   .sound {
