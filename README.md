@@ -258,7 +258,7 @@ What it looks like on a page load:
 
 ![hangman-image-1.png](assets/images/readme/bugs/hangman-image-1.png)
 
-When tries variably changed, image did not change with it:
+Image did not change with tries variable
 
 ![hangman-image-2.png](assets/images/readme/bugs/hangman-image-2.png)
 
@@ -304,9 +304,9 @@ It registers as a second key was pressed. Giving people a way to cheat.
 
 - Is it working?
 
-- Instead of storing the keys Pressed within a particular file.
-- I store these keys in localStorage, then whenever I want to see if a key has been pressed
-- I just access that store and run my checks
+Instead of storing the keys Pressed within a particular file.
+I store these keys in localStorage, then, whenever I want to see if a key has been pressed,
+I just access that store and run my checks
 
 ### [Testing](#table-of-content)
 
