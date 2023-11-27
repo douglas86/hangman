@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   createArray(splitStringToArray());
   qwertyKeyboard();
   overlay();
-  // clears the localStorage when the page loads
+  // clears the storage when the page loads
   localStorage.clear();
 
   // This event listener attaches to the music button
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Object.values(keyboard).map((item) => {
           item.setAttribute("class", "keyboard-buttons");
         });
-        // reset keysPressed array and localStorage
+        // reset keysPressed array and storage
         keysPressed = [];
         localStorage.clear();
       }
@@ -68,17 +68,17 @@ document.addEventListener("DOMContentLoaded", function () {
         // if a letter has been pressed do nothing
         const parsing = JSON.parse(localStorage.getItem("keysPressed"));
 
-        // when there is nothing in localStorage
+        // when there is nothing in storage
         parsing !== null
           ? // when the key pressed is not found in a parsing array
             parsing.indexOf(event.key.toLowerCase()) === -1 &&
             keysPressed.push(event.key.toLowerCase()) &&
             checkLetterUsed(splitStringToArray(), event.key)
-          : // when there is no localStorage for parsing variable
+          : // when there is no storage for parsing variable
             keysPressed.push(event.key.toLowerCase()) &&
             checkLetterUsed(splitStringToArray(), event.key);
 
-        // stores the keysPressed array as a string to localStorage
+        // stores the keysPressed array as a string to storage
         let string = JSON.stringify(keysPressed);
         localStorage.setItem("keysPressed", string);
 
