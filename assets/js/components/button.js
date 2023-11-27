@@ -1,6 +1,6 @@
-import { checkLetterUsed } from "../utils/check-letter-used.js";
 import { splitStringToArray } from "../utils/split-string-to-array.js";
 import { createArray } from "../utils/create-array.js";
+import { storage } from "../utils/storage.js";
 
 /**
  * creates the keyboard buttons on the screen
@@ -54,8 +54,7 @@ export const button = (objectAttributes) => {
           // check to see if a letter has already been pressed
           // if a letter has not been pressed update scores
           // if a letter has been pressed do nothing
-          keysClicked.indexOf(value.toLowerCase()) === -1 &&
-            checkLetterUsed(splitStringToArray(), value);
+          storage(value);
 
           // pushes all buttons with the class of keyboard-buttons-clicked to array
           for (let i = 0; i < clickedButtons.length; i++) {
