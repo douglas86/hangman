@@ -304,9 +304,9 @@ It registers as a second key was pressed. Giving people a way to cheat.
 
 - Is it working?
 
-- Instead of storing the keys Pressed within a particular file.
-- I store these keys in localStorage, then whenever I want to see if a key has been pressed
-- I just access that store and run my checks
+Instead of storing the keys Pressed within a particular file.
+I store these keys in localStorage, then, whenever I want to see if a key has been pressed,
+I just access that store and run my checks
 
 ### [Testing](#table-of-content)
 
