@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   qwertyKeyboard();
   overlay();
   // clears the storage when the page loads
-  localStorage.clear();
+  storage("clear");
 
   // This event listener attaches to the music button
   // This is used as a toggle to turn the music off and on
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
           item.setAttribute("class", "keyboard-buttons");
         });
         // reset keysPressed array and storage
-        localStorage.clear();
+        storage("clear");
       }
   };
 

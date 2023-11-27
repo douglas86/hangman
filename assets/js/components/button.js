@@ -12,11 +12,7 @@ export const button = (objectAttributes) => {
   let guess = document.getElementsByClassName("guessed-word")[0];
   let hidden = document.getElementById("hidden-data");
 
-  let clickedButtons = document.getElementsByClassName(
-    "keyboard-buttons-clicked",
-  );
   let keys = document.getElementsByClassName("keyboard-buttons");
-  let keysClicked = [];
 
   const config = { childList: true };
 
@@ -29,7 +25,8 @@ export const button = (objectAttributes) => {
         Object.values(keys).map((item) => {
           item.setAttribute("class", "keyboard-buttons");
         });
-        keysClicked = [];
+        // keysClicked = [];
+        storage("clear");
       }
   };
 
@@ -44,9 +41,9 @@ export const button = (objectAttributes) => {
     key === "text"
       ? (btn.innerText = `${value}`) &&
         btn.addEventListener("click", function () {
-          if (clickedButtons.length === 0) {
-            keysClicked.length = 0;
-          }
+          // if (clickedButtons.length === 0) {
+          //   keysClicked.length = 0;
+          // }
 
           // sets the button attribute to change class so that different styling can be applied
           btn.setAttribute("class", "keyboard-buttons-clicked");
@@ -57,9 +54,9 @@ export const button = (objectAttributes) => {
           storage(value);
 
           // pushes all buttons with the class of keyboard-buttons-clicked to array
-          for (let i = 0; i < clickedButtons.length; i++) {
-            keysClicked.push(clickedButtons[i].innerHTML.toLowerCase());
-          }
+          // for (let i = 0; i < clickedButtons.length; i++) {
+          //   keysClicked.push(clickedButtons[i].innerHTML.toLowerCase());
+          // }
         })
       : btn.setAttribute(key, `${value}`);
   });
