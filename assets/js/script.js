@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
         Object.values(keyboard).map((item) => {
           item.setAttribute("class", "keyboard-buttons");
         });
+        // reset keysPressed array and localStorage
         keysPressed = [];
+        localStorage.clear();
       }
   };
 
@@ -66,25 +68,19 @@ document.addEventListener("DOMContentLoaded", function () {
         // if a letter has been pressed do nothing
         const parsing = JSON.parse(localStorage.getItem("keysPressed"));
 
+        // when there is nothing in localStorage
         parsing !== null
-          ? parsing.indexOf(event.key.toLowerCase()) === -1 &&
-            keysPressed.push(event.key.toLowerCase())
-          : keysPressed.push(event.key.toLowerCase());
+          ? // when the key pressed is not found in a parsing array
+            parsing.indexOf(event.key.toLowerCase()) === -1 &&
+            keysPressed.push(event.key.toLowerCase()) &&
+            checkLetterUsed(splitStringToArray(), event.key)
+          : // when there is no localStorage for parsing variable
+            keysPressed.push(event.key.toLowerCase()) &&
+            checkLetterUsed(splitStringToArray(), event.key);
 
+        // stores the keysPressed array as a string to localStorage
         let string = JSON.stringify(keysPressed);
         localStorage.setItem("keysPressed", string);
-
-        console.log("parsing", parsing);
-
-        keysPressed.indexOf(event.key.toLowerCase()) === -1 &&
-          checkLetterUsed(splitStringToArray(), event.key);
-
-        // sets localStorage converting keysPressed array to string
-        // let string = JSON.stringify(keysPressed);
-        // localStorage.setItem("keysPressed", string);
-
-        // when a letter on keyboard used append to keysPressed array
-        // keysPressed.push(event.key.toLowerCase());
 
         // when a letter is pressed on the keyboard, the class of the keyboard will change
         // to give different styling to keys
