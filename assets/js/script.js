@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   createArray(splitStringToArray());
   qwertyKeyboard();
   overlay();
-  // clears the localStorage when page loads
+  // clears the localStorage when the page loads
   localStorage.clear();
 
   // This event listener attaches to the music button
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // this event listener is to listen for the word that you need to guess to change
-  //   when it changes it resets the keysClicked array
+  // when it changes it resets the keysClicked array
   // this still needs to be broken into its own file - haven't gotten it right yet
   const observer = new MutationObserver(callback);
 
@@ -64,15 +64,27 @@ document.addEventListener("DOMContentLoaded", function () {
         // check to see if a letter has already been pressed
         // if a letter has not been pressed update scores
         // if a letter has been pressed do nothing
+        const parsing = JSON.parse(localStorage.getItem("keysPressed"));
+
+        parsing !== null
+          ? parsing.indexOf(event.key.toLowerCase()) === -1 &&
+            keysPressed.push(event.key.toLowerCase())
+          : keysPressed.push(event.key.toLowerCase());
+
+        let string = JSON.stringify(keysPressed);
+        localStorage.setItem("keysPressed", string);
+
+        console.log("parsing", parsing);
+
         keysPressed.indexOf(event.key.toLowerCase()) === -1 &&
           checkLetterUsed(splitStringToArray(), event.key);
 
         // sets localStorage converting keysPressed array to string
-        let string = JSON.stringify(keysPressed);
-        localStorage.setItem("keysPressed", string);
+        // let string = JSON.stringify(keysPressed);
+        // localStorage.setItem("keysPressed", string);
 
         // when a letter on keyboard used append to keysPressed array
-        keysPressed.push(event.key.toLowerCase());
+        // keysPressed.push(event.key.toLowerCase());
 
         // when a letter is pressed on the keyboard, the class of the keyboard will change
         // to give different styling to keys
