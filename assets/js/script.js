@@ -1,9 +1,9 @@
 import { createArray } from "./utils/create-array.js";
 import { qwertyKeyboard } from "./components/qwerty-keyboard.js";
-import { checkLetterUsed } from "./utils/check-letter-used.js";
 import { overlay } from "./components/overlay.js";
 import { randomValue } from "./utils/random-value.js";
 import { splitStringToArray } from "./utils/split-string-to-array.js";
+import { storage } from "./utils/storage.js";
 
 /**
  * Main entry point into the whole program
@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
   let hidden = document.getElementById("hidden-data");
   let guess = document.getElementsByClassName("guessed-word")[0];
   let keyboard = document.getElementsByClassName("keyboard-buttons-clicked");
-  let keysPressed = []; // captures all the keys that were pressed
 
   createArray(splitStringToArray());
   qwertyKeyboard();
   overlay();
+  // clears the storage when the page loads
+  storage("clear");
 
   // This event listener attaches to the music button
   // This is used as a toggle to turn the music off and on
@@ -42,12 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
         Object.values(keyboard).map((item) => {
           item.setAttribute("class", "keyboard-buttons");
         });
-        keysPressed = [];
+        // reset keysPressed array and storage
+        storage("clear");
       }
   };
 
   // this event listener is to listen for the word that you need to guess to change
-  //   when it changes it resets the keysClicked array
+  // when it changes it resets the keysClicked array
   // this still needs to be broken into its own file - haven't gotten it right yet
   const observer = new MutationObserver(callback);
 
@@ -59,14 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (alphabet.includes(event.key.toLowerCase())) {
       if (flag === "True") {
-        // check to see if a letter has already been pressed
-        // if a letter has not been pressed update scores
-        // if a letter has been pressed do nothing
-        keysPressed.indexOf(event.key.toLowerCase()) === -1 &&
-          checkLetterUsed(splitStringToArray(), event.key);
-
-        // when a letter on keyboard used append to keysPressed array
-        keysPressed.push(event.key.toLowerCase());
+        // works with localStorage
+        storage(event.key);
 
         // when a letter is pressed on the keyboard, the class of the keyboard will change
         // to give different styling to keys
