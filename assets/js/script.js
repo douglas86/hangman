@@ -1,9 +1,9 @@
 import { createArray } from "./utils/create-array.js";
 import { qwertyKeyboard } from "./components/qwerty-keyboard.js";
-import { checkLetterUsed } from "./utils/check-letter-used.js";
 import { overlay } from "./components/overlay.js";
 import { randomValue } from "./utils/random-value.js";
 import { splitStringToArray } from "./utils/split-string-to-array.js";
+import { storage } from "./utils/storage.js";
 
 /**
  * Main entry point into the whole program
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let hidden = document.getElementById("hidden-data");
   let guess = document.getElementsByClassName("guessed-word")[0];
   let keyboard = document.getElementsByClassName("keyboard-buttons-clicked");
-  let keysPressed = []; // captures all the keys that were pressed
 
   createArray(splitStringToArray());
   qwertyKeyboard();
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
           item.setAttribute("class", "keyboard-buttons");
         });
         // reset keysPressed array and storage
-        keysPressed = [];
         localStorage.clear();
       }
   };
@@ -63,24 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (alphabet.includes(event.key.toLowerCase())) {
       if (flag === "True") {
-        // check to see if a letter has already been pressed
-        // if a letter has not been pressed update scores
-        // if a letter has been pressed do nothing
-        const parsing = JSON.parse(localStorage.getItem("keysPressed"));
-
-        // when there is nothing in storage
-        parsing !== null
-          ? // when the key pressed is not found in a parsing array
-            parsing.indexOf(event.key.toLowerCase()) === -1 &&
-            keysPressed.push(event.key.toLowerCase()) &&
-            checkLetterUsed(splitStringToArray(), event.key)
-          : // when there is no storage for parsing variable
-            keysPressed.push(event.key.toLowerCase()) &&
-            checkLetterUsed(splitStringToArray(), event.key);
-
-        // stores the keysPressed array as a string to storage
-        let string = JSON.stringify(keysPressed);
-        localStorage.setItem("keysPressed", string);
+        // works with localStorage
+        storage(event.key);
 
         // when a letter is pressed on the keyboard, the class of the keyboard will change
         // to give different styling to keys
