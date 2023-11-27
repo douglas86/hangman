@@ -67,6 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
         keysPressed.indexOf(event.key.toLowerCase()) === -1 &&
           checkLetterUsed(splitStringToArray(), event.key);
 
+        // sets localStorage converting keysPressed array to string
+        let string = JSON.stringify(keysPressed);
+        localStorage.setItem("keysPressed", string);
+
         // when a letter on keyboard used append to keysPressed array
         keysPressed.push(event.key.toLowerCase());
 
