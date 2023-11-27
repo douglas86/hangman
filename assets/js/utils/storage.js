@@ -3,6 +3,9 @@ import { splitStringToArray } from "./split-string-to-array.js";
 
 let keysPressed = [];
 
+/*
+Stores array in localStorage only if a letter was not used
+ */
 export const storage = (letter) => {
   const parsing = JSON.parse(localStorage.getItem("keysPressed"));
 
