@@ -258,7 +258,7 @@ What it looks like on a page load:
 
 ![hangman-image-1.png](assets/images/readme/bugs/hangman-image-1.png)
 
-When tries variably changed, image did not change with it:
+Image did not change with tries variable
 
 ![hangman-image-2.png](assets/images/readme/bugs/hangman-image-2.png)
 
