@@ -304,8 +304,9 @@ It registers as a second key was pressed. Giving people a way to cheat.
 
 - Is it working?
 
-This bug was not solved. Will have to find time at a later date.
-
+- Instead of storing the keys Pressed within a particular file.
+- I store these keys in localStorage, then whenever I want to see if a key has been pressed
+- I just access that store and run my checks
 
 ### [Testing](#table-of-content)
 
@@ -317,7 +318,7 @@ This bug was not solved. Will have to find time at a later date.
 | When keyboard letter is pressed the letter is displayed                                       | PASS   |
 | You can only press the keyboard character once                                                | PASS   |
 | You can only click a specific button on qwerty keyboard once                                  | PASS   |
-| If you click a letter on keyboard then switch to qwerty keyboard, that letter registers again | FAIL   |
+| Letter doesn't register when switching between keyboards                                      | PASS   |
 | scoring adds by 2 for every correct character                                                 | PASS   |
 | scoring subtracts by 1 for every incorrect character                                          | PASS   |
 | tries subtracts by 1 for every incorrect character                                            | PASS   |
